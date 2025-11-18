@@ -6,6 +6,7 @@ This repo is a tiny publishing system for sharing field notes and articles direc
 
 - [Vite](https://vitejs.dev/) + React 19 + TypeScript
 - [`react-markdown`](https://github.com/remarkjs/react-markdown) + [`remark-gfm`](https://github.com/remarkjs/remark-gfm) for GitHub-flavoured markdown
+- [`react-router-dom`](https://reactrouter.com/) for clean `/slug` permalinks per article
 - GitHub Actions + GitHub Pages for hosting
 
 ## Prerequisites
@@ -25,7 +26,7 @@ npm run preview      # preview the production build locally
 ## Writing posts
 
 1. Add a markdown file under `src/blog/` (e.g. `src/blog/my-post.md`). Keep formatting simple; GFM extensions (tables, strikethrough, lists) are supported.
-2. Register the post in `src/content/posts.ts` by importing it with the `?raw` suffix and adding metadata (`slug`, `title`, `description`, optional `publishedAt`).
+2. Register the post in `src/content/posts.ts` by importing it with the `?raw` suffix and adding metadata (`slug`, `title`, `description`, optional `publishedAt`). The `slug` becomes the shareable route, e.g. `/esp-mosq`.
 3. Place images in `public/images/` (or any folder inside `public/`) and reference them from your markdown using absolute paths such as `![Alt text](/images/my-photo.jpg)`.
 4. Run `npm run dev` to preview your changes live.
 

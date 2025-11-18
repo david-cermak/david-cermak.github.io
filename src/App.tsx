@@ -1,6 +1,7 @@
-import { useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import { Navigate, Route, Routes, useNavigate, useParams } from 'react-router-dom';
 
 import { getPostBySlug, posts } from './content/posts';
 
@@ -18,13 +19,24 @@ function formatDate(dateString?: string) {
   }).format(new Date(dateString));
 }
 
-function App() {
-  const [selectedSlug, setSelectedSlug] = useState(posts[0]?.slug ?? '');
+type RouteParams = {
+  slug?: string;
+};
+
+function BlogPage() {
+  const navigate = useNavigate();
+  const { slug } = useParams<RouteParams>();
+  const fallbackSlug = posts[0]?.slug ?? '';
+  const selectedSlug = slug ?? fallbackSlug;
 
   const selectedPost = useMemo(
     () => getPostBySlug(selectedSlug),
     [selectedSlug],
   );
+
+  const handleSelect = (nextSlug: string) => {
+    navigate(`/${nextSlug}`);
+  };
 
   return (
     <div className="page">
@@ -50,7 +62,7 @@ function App() {
                 <li key={post.slug}>
                   <button
                     className={isActive ? 'post-chip active' : 'post-chip'}
-                    onClick={() => setSelectedSlug(post.slug)}
+                    onClick={() => handleSelect(post.slug)}
                     aria-pressed={isActive}
                   >
                     <span className="chip-title">{post.title}</span>
@@ -103,6 +115,16 @@ function App() {
         </section>
       </main>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<BlogPage />} />
+      <Route path="/:slug" element={<BlogPage />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
+    </Routes>
   );
 }
 

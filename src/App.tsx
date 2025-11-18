@@ -41,8 +41,8 @@ function BlogPage() {
   return (
     <div className="page">
       <header className="hero">
-        <p className="eyebrow">ESP32 publishing lab</p>
-        <h1>Field notes, published from markdown.</h1>
+        <p className="eyebrow">Embedded publishing lab</p>
+        <h1>David's public field notes</h1>
         <p className="hero-subtitle">
           Write posts in <code>src/blog/</code>, preview locally, and ship
           everything to GitHub Pages with a single push.

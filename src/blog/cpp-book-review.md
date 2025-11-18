@@ -1,4 +1,5 @@
 Book review: C++ memory management
+![Cover of C++ Memory Management book](/images/cpp-book.png)
 
 ## Why this book matters for embedded C++
 

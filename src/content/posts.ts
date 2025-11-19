@@ -7,8 +7,8 @@ export type Post = {
   body: string;
 };
 
-import espMosqBody from '../blog/esp-mosq.md?raw';
-import cppBookReviewBody from '../blog/cpp-book-review.md?raw';
+import espMosqBody from '../blog/25/esp-mosq.md?raw';
+import cppBookReviewBody from '../blog/25/cpp-book-review.md?raw';
 
 export const posts: Post[] = [
   {

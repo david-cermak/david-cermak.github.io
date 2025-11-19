@@ -7,6 +7,8 @@ import { getPostBySlug, posts } from './content/posts';
 
 import './App.css';
 
+const DEFAULT_YEAR = '25';
+
 function formatDate(dateString?: string) {
   if (!dateString) {
     return null;
@@ -20,13 +22,15 @@ function formatDate(dateString?: string) {
 }
 
 type RouteParams = {
+  year?: string;
   slug?: string;
 };
 
 function BlogPage() {
   const navigate = useNavigate();
-  const { slug } = useParams<RouteParams>();
+  const { year, slug } = useParams<RouteParams>();
   const fallbackSlug = posts[0]?.slug ?? '';
+  const fallbackYear = year ?? DEFAULT_YEAR;
   const selectedSlug = slug ?? fallbackSlug;
 
   const selectedPost = useMemo(
@@ -35,18 +39,14 @@ function BlogPage() {
   );
 
   const handleSelect = (nextSlug: string) => {
-    navigate(`/${nextSlug}`);
+    navigate(`/${fallbackYear}/${nextSlug}`);
   };
 
   return (
     <div className="page">
       <header className="hero">
         <p className="eyebrow">Embedded publishing lab</p>
-        <h1>David's public field notes</h1>
-        <p className="hero-subtitle">
-          Write posts in <code>src/blog/</code>, preview locally, and ship
-          everything to GitHub Pages with a single push.
-        </p>
+        <h1>David's field notes</h1>
       </header>
       <main className="layout">
         <aside className="sidebar">
@@ -121,9 +121,10 @@ function BlogPage() {
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<BlogPage />} />
-      <Route path="/:slug" element={<BlogPage />} />
-      <Route path="*" element={<Navigate to="/" replace />} />
+      <Route path="/" element={<Navigate to={`/${DEFAULT_YEAR}`} replace />} />
+      <Route path="/:year" element={<BlogPage />} />
+      <Route path="/:year/:slug" element={<BlogPage />} />
+      <Route path="*" element={<Navigate to={`/${DEFAULT_YEAR}`} replace />} />
     </Routes>
   );
 }

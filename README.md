@@ -25,8 +25,8 @@ npm run preview      # preview the production build locally
 
 ## Writing posts
 
-1. Add a markdown file under `src/blog/` (e.g. `src/blog/my-post.md`). Keep formatting simple; GFM extensions (tables, strikethrough, lists) are supported.
-2. Register the post in `src/content/posts.ts` by importing it with the `?raw` suffix and adding metadata (`slug`, `title`, `description`, optional `publishedAt`). The `slug` becomes the shareable route, e.g. `/esp-mosq`.
+1. Add a markdown file under the year folder inside `src/blog/` (e.g. `src/blog/25/my-post.md`). Keep formatting simple; GFM extensions (tables, strikethrough, lists) are supported.
+2. Register the post in `src/content/posts.ts` by importing it with the `?raw` suffix and adding metadata (`slug`, `title`, `description`, optional `publishedAt`). The `slug` becomes the shareable route, e.g. `/25/esp-mosq`.
 3. Place images in `public/images/` (or any folder inside `public/`) and reference them from your markdown using absolute paths such as `![Alt text](/images/my-photo.jpg)`.
 4. Run `npm run dev` to preview your changes live.
 
@@ -52,7 +52,8 @@ No manual steps are required—push to `main` and Pages will update.
 ├── src/
 │   ├── App.tsx             # main UI (sidebar + markdown renderer)
 │   ├── App.css / index.css # styling
-│   ├── blog/               # markdown sources (esp-mosq.md, ...)
+│   ├── blog/
+│   │   └── 25/             # markdown sources grouped by year (esp-mosq.md, ...)
 │   └── content/posts.ts    # metadata + content registry
 ├── .github/workflows/      # deployment pipeline
 ├── package.json            # scripts + deps

@@ -9,6 +9,7 @@ export type Post = {
 
 import espMosqBody from '../blog/25/esp-mosq.md?raw';
 import cppBookReviewBody from '../blog/25/cpp-book-review.md?raw';
+import programmersMindsetBody from '../blog/25/programmers-mindset.md?raw';
 
 export const posts: Post[] = [
   {
@@ -26,7 +27,16 @@ export const posts: Post[] = [
       'Notes on the book "C++ Memory Management" by Patrice Roy.',
     publishedAt: '2025-11-18',
     body: cppBookReviewBody.trim(),
+  },
+  {
+    slug: 'programmers-mindset',
+    title: 'Book review: The C++ Programmer\'s Mindset',
+    description:
+      'Notes on the book "The C++ Programmer\'s Mindset" by Sam Morley.',
+    publishedAt: '2025-12-07',
+    body: programmersMindsetBody.trim(),
   }
+
 ];
 
 export function getPostBySlug(slug: string) {

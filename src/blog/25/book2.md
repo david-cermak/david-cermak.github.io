@@ -1,4 +1,4 @@
-📘 *Book review*: "The C++ Programmer’s Mindset" by Sam Morley
+📘 *Book review*: "The C++ Programmer's Mindset" by Sam Morley
 
 I read this book recently and wanted to share a few thoughts from an embedded developer's perspective.  
 Full review with code snippets and charts 👉 https://david-cermak.github.io/blog/25/programmers-mindset
@@ -23,4 +23,4 @@ If you’re an embedded C++ dev who wants to think more like a performance‑min
 
 PS: The “real‑life” case study in the book is about tracking mysterious rubber duck sightings around the world—yes, the same rubber duckies we talk to when debugging. 🦆 You ingest sightings from emails, CSVs, and JSON APIs, normalize them, and build a CLI that clusters hot spots where the ducks are congregating. It’s a fun, slightly absurd brief that still forces you to practice serious C++: file parsers, data pipelines, k‑means on a sphere, error handling, and performance tuning. In other words, you get to ship a proper tool while your rubber duck gets a starring role in the spec.
 
-🙏Big thanks to Packt and Mansi Shah for providing me an Early Review Copy of this book.
+> 🙏 Big thanks to Packt and Mansi Shah for the Early Review Copy, and to Sam Morley for writing a book that’s both an excellent learning resource and a very practical guide to modern C++ in the real world.

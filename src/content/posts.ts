@@ -7,6 +7,7 @@ export type Post = {
   body: string;
 };
 
+import refuzzBody from '../blog/25/refuzz.md?raw';
 import book1Body from '../blog/25/book1.md?raw';
 import book2Body from '../blog/25/book2.md?raw';
 import consoleBody from '../blog/25/console.md?raw';
@@ -40,6 +41,14 @@ import tunnelsBody from '../blog/25/tunnels.md?raw';
 import wifiRemoteBody from '../blog/25/wifi_remote.md?raw';
 
 export const posts: Post[] = [
+  {
+    slug: 'refuzz',
+    title: 'ReFuzz and the Case for Reusing Tests in Hardware Fuzzing',
+    description:
+      'Overview and personal take on the recent paper "Adaptive Fuzzing Framework that Reuses Tests from Prior Processors" by Texas A&M and TU Darmstadt',
+    publishedAt: '2025-12-14',
+    body: refuzzBody.trim(),
+  },
   {
     slug: 'esp-mosq',
     title: 'Lightweight MQTT broker running on ESP32',

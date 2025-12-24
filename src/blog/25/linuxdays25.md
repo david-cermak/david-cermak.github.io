@@ -3,4 +3,4 @@ Topic: *Practical intro into fuzz-testing*
 
 The session covers fuzzing approaches (black/grey/white-box) and tools, how to define fuzz targets and run them on host. We’ll also look at crash reproduction and CI integration.
 
-👉 https://lnkd.in/e7qG_pSu
+👉 https://www.linuxdays.cz/2025

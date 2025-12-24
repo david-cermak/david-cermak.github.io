@@ -7,7 +7,7 @@ But what if we *await *instead? Let's explore *C*++20 *coroutines: *a way to wri
 I built a simple HTTP server two ways:
 * Classic style: 1 FreeRTOS task per client
 * Coroutine style: event loop + awaitable workers
-👉 https://lnkd.in/ercXQ3ar
+👉 https://github.com/david-cermak/esp-network-examples/tree/main/async-server
 
 *The backstory: *I've been playing with Kafka client and the original code uses _̳_̳t̳h̳r̳e̳a̳d̳ (TLS) to stash state per thread. Works fine… but had to set the FreeRTOS stacks sizes too big even for small housekeeping tasks.
 Coroutines would come in useful

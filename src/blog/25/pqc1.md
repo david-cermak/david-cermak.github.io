@@ -3,7 +3,7 @@ Alice and Bob walk into a quantum bar ⚛️
 *Bob: "*Alice has the key, I’m on hashtag#ESP32."
 
 Sounds like hashtag#funForFriday, but it’s not just a joke.
-I turned this anecdote into a real demo: 👉https://lnkd.in/epGxnntT
+I turned this anecdote into a real demo: 👉https://github.com/david-cermak/upqc-lab/tree/main/examples
 
 Linux server and an ESP32 as client building a post-quantum secure TCP channel in 6 steps 🔐:
 1) Alice → Bob: send Kyber (ML-KEM-512) public key (post-quantum KEM)

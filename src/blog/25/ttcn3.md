@@ -3,7 +3,7 @@ What do you use for *IoT *protocol *conformance testing?*
 
 I recently revisited TTCN-3 with Eclipse Titan. Some years back I had put together a simple TCP/IP conformance suite for ESP32 (just reused Intel’s suite for Zephyr). That project has been archived, and Titan’s last release was in 2023… 🤔
 
-Titan and TTCN-3 still work, are maintained, and can cover IoT conformance nicely, see my iot-conformance project 👉 https://lnkd.in/egV65eKd which runs:
+Titan and TTCN-3 still work, are maintained, and can cover IoT conformance nicely, see my iot-conformance project 👉 https://github.com/david-cermak/iot-conformance which runs:
 * HW-in-the-loop TCP/IP tests on real ESP32 hardware
 * SW-simulated MQTT tests running ESP-IDF on Linux
 

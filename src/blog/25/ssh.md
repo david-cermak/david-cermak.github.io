@@ -2,7 +2,7 @@
 
 Check out the preliminary port of hashtag#libssh to *ESP-IDF:*
 
-https://lnkd.in/ezrf-r-8
+https://github.com/david-cermak/libssh
 
 Big thanks to Chris Gammell for the inspiration -- his remote shell for Zephyr devices got me thinking: What if we could run a full-blown *sshd *on *ESP-IDF.*
 And we can.

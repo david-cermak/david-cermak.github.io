@@ -1,7 +1,7 @@
 📘 *Book review: "*C++ Memory Management" by Patrice Roy
 
 I read this book recently and wanted to share a few thoughts from an embedded developer's perspective.
-Full review with some borrowed code examples 👉https://lnkd.in/ePv4-Jin
+Full review with some borrowed code examples 👉https://david-cermak.github.io/25/cpp-book-review
 
 *Why this book matters for embedded C*++🔋
 If you build embedded systems in C++, this book is absolutely worth your time. It gives one of the clearest explanations I’ve seen of how C++ memory really works: storage, lifetimes, ownership, and all the sharp edges we hit in real projects. If you want to seriously make the case for using C++ in embedded, this is basically the entry ticket.

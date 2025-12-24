@@ -6,7 +6,7 @@ Back from holiday ➡️ Sharing a quick hashtag#libssh update:
  ⚙️ Configurable settings and logs: Easier debugging (my own humble contribution)
 
 ---
-Original post about SSH server on hashtag#ESP32 https://lnkd.in/eW57Fi25
+Original post about SSH server on hashtag#ESP32 https://www.linkedin.com/posts/david-cermak-016282158_esp32-libssh-activity-7351875290161111040-1B6w
 
 What should we add next to make the dev experience even better? 👇
 hashtag#EmbeddedSystems hashtag#Security

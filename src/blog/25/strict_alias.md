@@ -16,7 +16,7 @@ Here's where "strict aliasing" and "inactive members" might cause trouble:
 * Reads/writes might be reordered or skipped
 * Code that looked fine at -O1 suddenly misbehaves at -O2
 
-👉 Try this Godbolt example: https://lnkd.in/ei9vVzey
+👉 Try this Godbolt example: https://godbolt.org/z/E6ov8f19W
 (try adding "-fstrict-aliasing")
 
 To stay safe:

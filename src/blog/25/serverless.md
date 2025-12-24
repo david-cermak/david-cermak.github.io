@@ -3,7 +3,7 @@ Just two ESP32s, brokering MQTT across isolated networks.
 
 This example demonstrates how to enable MQTT publish/subscribe across remote sites without relying on any external infrastructure:
 
-https://lnkd.in/e6Hyax3K
+https://github.com/espressif/esp-protocols/tree/master/components/mosquitto/examples/serverless_mqtt
 
 *Key features:*
 🛜 Each ESP32 runs an isolated Wi-Fi network (AP mode) for local IoT devices

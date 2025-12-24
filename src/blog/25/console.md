@@ -1,7 +1,7 @@
 *Console Apps *on Embedded Systems:
 From Serial to Secure Network Consoles via Link-time Registration and Tunneling.
 
-Last month I gave a talk about console applications at the hashtag#ESP32 Community Meeting 👉https://lnkd.in/e8efZ8Jg, and I’d like to share the slides.
+Last month I gave a talk about console applications at the hashtag#ESP32 Community Meeting 👉https://www.linkedin.com/events/espcommunitymeetup20257374437511319965696/, and I’d like to share the slides.
 
 The presentation covers:
 * A serial console framework with ready‑to‑use commands 

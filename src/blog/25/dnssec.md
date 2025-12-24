@@ -1,6 +1,6 @@
 🔍 Do you *trust *your *DNS?*
 
-There’s been an interesting incident where a CA mis-issued TLS certificates for Cloudflare’s well-known resolver 1.1.1.1 👉 https://lnkd.in/eGrZ4weF
+There’s been an interesting incident where a CA mis-issued TLS certificates for Cloudflare’s well-known resolver 1.1.1.1 👉 https://blog.cloudflare.com/unauthorized-issuance-of-certificates-for-1-1-1-1/
 
 These certificates were reportedly created for testing. Still, they highlight a risk: if such a certificate (plus its private key) were abused, DoH or DoT (DNS over HTTPS/TLS) traffic could, in theory, be intercepted.
 

@@ -1,7 +1,7 @@
 *Dear Network,*
 I've just published *v1.0 *of *eppp-link (*hashtag#ESP32 hashtag#PPP Link)-- a generic component for building Point-to-Point links over various transports for microcontrollers (and other nodes).
 
-https://lnkd.in/ePw-p_gs
+https://components.espressif.com/components/espressif/eppp_link
 
 🛠️ *Features:*
  • Network modes: Standard PPP vs Plain TUN (raw tunnel interface)
@@ -15,10 +15,10 @@ https://lnkd.in/ePw-p_gs
  • Bridging nodes via physical links
 
 📜 *Read more:*
- • Component registry: https://lnkd.in/ePw-p_gs
- • GitHub repository: https://lnkd.in/ekpB78ih
- • Examples: https://lnkd.in/epbREqHR
- • Detailed description: https://lnkd.in/ekTicMtS
+ • Component registry: https://components.espressif.com/components/espressif/eppp_link
+ • GitHub repository: https://github.com/espressif/esp-protocols/tree/master/components/eppp_link
+ • Examples: https://github.com/espressif/esp-protocols/tree/master/components/eppp_link/examples
+ • Detailed description: https://github.com/espressif/esp-protocols/blob/master/components/eppp_link/detailed_description.md
 
 ------
 *PS: *Video AI generated with *p*̲*i*̲*x*̲*v*̲*e*̲*r*̲*s*̲*e*̲–̲*v*̲*4*̲.̲*5*̲ commemorating brief (and imaginative?) history of PPP:

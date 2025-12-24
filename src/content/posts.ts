@@ -39,8 +39,17 @@ import strictAliasBody from '../blog/25/strict_alias.md?raw';
 import ttcn3Body from '../blog/25/ttcn3.md?raw';
 import tunnelsBody from '../blog/25/tunnels.md?raw';
 import wifiRemoteBody from '../blog/25/wifi_remote.md?raw';
+import mqttFuzzBody from '../blog/25/mqtt_fuzz.md?raw';
 
 export const posts: Post[] = [
+  {
+    slug: 'mqtt_fuzz',
+    title: 'Fuzzing IoT Protocols with Multi-Party and LLM-Assisted Methods',
+    description:
+      'Notes on two recent protocol-fuzzing papers: MBFuzzer (multi-party MQTT broker fuzzing) and an LLM-assisted model-based approach to generate stateful sequences.',
+    publishedAt: '2025-12-24',
+    body: mqttFuzzBody.trim(),
+  },
   {
     slug: 'refuzz',
     title: 'ReFuzz and the Case for Reusing Tests in Hardware Fuzzing',

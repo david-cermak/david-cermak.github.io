@@ -40,6 +40,8 @@ import ttcn3Body from '../blog/25/ttcn3.md?raw';
 import tunnelsBody from '../blog/25/tunnels.md?raw';
 import wifiRemoteBody from '../blog/25/wifi_remote.md?raw';
 import mqttFuzzBody from '../blog/25/mqtt_fuzz.md?raw';
+import cppMlKemBody from '../blog/25/cpp-mlkem.md?raw';
+import signalRatchetBody from '../blog/25/signal_ratchet.md?raw';
 
 export const posts: Post[] = [
   {
@@ -49,6 +51,22 @@ export const posts: Post[] = [
       'Notes on two recent protocol-fuzzing papers: MBFuzzer (multi-party MQTT broker fuzzing) and an LLM-assisted model-based approach to generate stateful sequences.',
     publishedAt: '2025-12-24',
     body: mqttFuzzBody.trim(),
+  },
+  {
+    slug: 'cpp-mlkem',
+    title: 'C++20, constexpr, header-only ML-KEM',
+    description:
+      'An interesting C++ implementation of a standard post-quantum key exchange worth a look.',
+    publishedAt: '2025-12-28',
+    body: cppMlKemBody.trim(),
+  },
+  {
+    slug: 'signal-ratchet',
+    title: 'What can IoT security learn from Signal’s latest post-quantum "tripple ratchet"?',
+    description:
+      'A look at Signal’s latest PQC upgrade and how it can be applied to embedded IoT devices.',
+    publishedAt: '2025-12-14',
+    body: signalRatchetBody.trim(),
   },
   {
     slug: 'refuzz',

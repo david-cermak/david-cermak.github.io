@@ -156,6 +156,30 @@
   overflow-x: auto;
 }
 
+.article-area .mermaid-diagram {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(8, 11, 28, 0.9);
+  overflow-x: auto;
+}
+
+.article-area .mermaid-diagram svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.article-area .mermaid-diagram-loading pre {
+  margin: 0;
+}
+
+.article-area .mermaid-diagram-error-message {
+  margin: 0.75rem 0 0;
+  color: rgba(225, 231, 255, 0.8);
+  font-size: 0.95rem;
+}
+
 .empty-state {
   text-align: center;
   color: rgba(225, 231, 255, 0.7);

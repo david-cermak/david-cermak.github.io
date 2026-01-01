@@ -32,6 +32,17 @@ npm run preview      # preview the production build locally
 
 The homepage automatically lists every post defined in `src/content/posts.ts` and renders the markdown via `react-markdown`.
 
+## Mermaid diagrams
+
+Mermaid fenced code blocks render automatically:
+
+````
+```mermaid
+flowchart TD
+  A --> B
+```
+````
+
 ## Deployment
 
 GitHub Actions workflow (`.github/workflows/deploy.yml`) builds and publishes the site whenever commits land on `main`.

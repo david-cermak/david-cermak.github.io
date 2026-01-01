@@ -42,8 +42,17 @@ import wifiRemoteBody from '../blog/25/wifi_remote.md?raw';
 import mqttFuzzBody from '../blog/25/mqtt_fuzz.md?raw';
 import cppMlKemBody from '../blog/25/cpp-mlkem.md?raw';
 import signalRatchetBody from '../blog/25/signal_ratchet.md?raw';
+import rtosChoicesBody from '../blog/25/rtos_choice.md?raw';
 
 export const posts: Post[] = [
+  {
+    slug: 'rtos_choices',
+    title: 'Choosing an RTOS for embedded systems',
+    description:
+      'A look at the trade-offs between FreeRTOS, Zephyr, and other RTOSes for embedded systems.',
+    publishedAt: '2026-01-01',
+    body: rtosChoicesBody.trim(),
+  },
   {
     slug: 'mqtt_fuzz',
     title: 'Fuzzing IoT Protocols with Multi-Party and LLM-Assisted Methods',

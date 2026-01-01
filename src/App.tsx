@@ -1,9 +1,10 @@
-import { useMemo } from 'react';
+import { isValidElement, useMemo } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { Navigate, Route, Routes, useNavigate, useParams } from 'react-router-dom';
 
 import { getPostBySlug, posts } from './content/posts';
+import { MermaidDiagram } from './components/MermaidDiagram';
 
 import './App.css';
 
@@ -104,6 +105,24 @@ function BlogPage() {
                         {props.children}
                       </a>
                     );
+                  },
+                  pre(props) {
+                    if (
+                      isValidElement(props.children) &&
+                      props.children.type === 'code'
+                    ) {
+                      const codeChild = props.children as {
+                        props: { className?: unknown; children?: unknown };
+                      };
+                      const className = String(codeChild.props.className ?? '');
+
+                      if (className.includes('language-mermaid')) {
+                        const chart = String(codeChild.props.children ?? '').trimEnd();
+                        return <MermaidDiagram chart={chart} />;
+                      }
+                    }
+
+                    return <pre {...props} />;
                   },
                 }}
               >

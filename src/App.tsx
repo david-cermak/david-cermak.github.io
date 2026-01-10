@@ -30,8 +30,14 @@ type RouteParams = {
 function BlogPage() {
   const navigate = useNavigate();
   const { year, slug } = useParams<RouteParams>();
-  const fallbackSlug = posts[0]?.slug ?? '';
   const fallbackYear = year ?? DEFAULT_YEAR;
+  
+  const filteredPosts = useMemo(
+    () => posts.filter((post) => post.year === fallbackYear),
+    [fallbackYear],
+  );
+  
+  const fallbackSlug = filteredPosts[0]?.slug ?? '';
   const selectedSlug = slug ?? fallbackSlug;
 
   const selectedPost = useMemo(
@@ -41,6 +47,15 @@ function BlogPage() {
 
   const handleSelect = (nextSlug: string) => {
     navigate(`/${fallbackYear}/${nextSlug}`);
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+  
+  const handleYearChange = (newYear: string) => {
+    const postsForYear = posts.filter((post) => post.year === newYear);
+    const firstSlug = postsForYear[0]?.slug ?? '';
+    navigate(`/${newYear}/${firstSlug}`);
     if (typeof window !== 'undefined') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
@@ -56,10 +71,26 @@ function BlogPage() {
         <aside className="sidebar">
           <div className="sidebar-header">
             <h2>Articles</h2>
-            <p>{posts.length} ready to publish</p>
+            <p>{filteredPosts.length} ready to publish</p>
+          </div>
+          <div className="year-tabs">
+            <button
+              className={fallbackYear === '25' ? 'year-tab active' : 'year-tab'}
+              onClick={() => handleYearChange('25')}
+              aria-pressed={fallbackYear === '25'}
+            >
+              2025
+            </button>
+            <button
+              className={fallbackYear === '26' ? 'year-tab active' : 'year-tab'}
+              onClick={() => handleYearChange('26')}
+              aria-pressed={fallbackYear === '26'}
+            >
+              2026
+            </button>
           </div>
           <ul>
-            {posts.map((post) => {
+            {filteredPosts.map((post) => {
               const isActive = post.slug === selectedSlug;
 
               return (

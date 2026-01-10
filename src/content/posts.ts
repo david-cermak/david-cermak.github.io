@@ -5,6 +5,7 @@ export type Post = {
   publishedAt?: string;
   heroImage?: string;
   body: string;
+  year: string;
 };
 
 import refuzzBody from '../blog/25/refuzz.md?raw';
@@ -42,16 +43,17 @@ import wifiRemoteBody from '../blog/25/wifi_remote.md?raw';
 import mqttFuzzBody from '../blog/25/mqtt_fuzz.md?raw';
 import cppMlKemBody from '../blog/25/cpp-mlkem.md?raw';
 import signalRatchetBody from '../blog/25/signal_ratchet.md?raw';
-import rtosChoicesBody from '../blog/25/rtos_choice.md?raw';
+import rtosChoicesBody from '../blog/26/rtos_choice.md?raw';
 
 export const posts: Post[] = [
   {
-    slug: 'rtos_choices',
+    slug: 'rtos_choice',
     title: 'Choosing an RTOS for embedded systems',
     description:
       'A look at the trade-offs between FreeRTOS, Zephyr, and other RTOSes for embedded systems.',
     publishedAt: '2026-01-01',
     body: rtosChoicesBody.trim(),
+    year: '26',
   },
   {
     slug: 'mqtt_fuzz',
@@ -60,6 +62,7 @@ export const posts: Post[] = [
       'Notes on two recent protocol-fuzzing papers: MBFuzzer (multi-party MQTT broker fuzzing) and an LLM-assisted model-based approach to generate stateful sequences.',
     publishedAt: '2025-12-24',
     body: mqttFuzzBody.trim(),
+    year: '25',
   },
   {
     slug: 'cpp-mlkem',
@@ -68,6 +71,7 @@ export const posts: Post[] = [
       'An interesting C++ implementation of a standard post-quantum key exchange worth a look.',
     publishedAt: '2025-12-28',
     body: cppMlKemBody.trim(),
+    year: '25',
   },
   {
     slug: 'signal-ratchet',
@@ -76,6 +80,7 @@ export const posts: Post[] = [
       'A look at Signal’s latest PQC upgrade and how it can be applied to embedded IoT devices.',
     publishedAt: '2025-12-14',
     body: signalRatchetBody.trim(),
+    year: '25',
   },
   {
     slug: 'refuzz',
@@ -84,6 +89,7 @@ export const posts: Post[] = [
       'Overview and personal take on the recent paper "Adaptive Fuzzing Framework that Reuses Tests from Prior Processors" by Texas A&M and TU Darmstadt',
     publishedAt: '2025-12-14',
     body: refuzzBody.trim(),
+    year: '25',
   },
   {
     slug: 'esp-mosq',
@@ -92,6 +98,7 @@ export const posts: Post[] = [
       'Notes on porting the Mosquitto broker to ESP-IDF and what it took to run on an ESP32.',
     publishedAt: '2025-05-10',
     body: espMosqBody.trim(),
+    year: '25',
   },
   {
     slug: 'cpp-book-review',
@@ -100,6 +107,7 @@ export const posts: Post[] = [
       'Why "C++ Memory Management" is a must-read for embedded developers who care about storage, lifetimes, and ownership.',
     publishedAt: '2025-06-05',
     body: cppBookReviewBody.trim(),
+    year: '25',
   },
   {
     slug: 'programmers-mindset',
@@ -108,6 +116,7 @@ export const posts: Post[] = [
       'How "The C++ Programmer\'s Mindset" connects computational thinking, performance, and modern C++ to embedded development.',
     publishedAt: '2025-06-20',
     body: programmersMindsetBody.trim(),
+    year: '25',
   },
   {
     slug: 'book1',
@@ -116,6 +125,7 @@ export const posts: Post[] = [
       'An embedded-focused review of "C++ Memory Management", covering storage, lifetimes, ownership, and why this book matters for firmware.',
     publishedAt: '2025-07-05',
     body: book1Body.trim(),
+    year: '25',
   },
   {
     slug: 'book2',
@@ -124,6 +134,7 @@ export const posts: Post[] = [
       'Thoughts from an embedded developer on "The C++ Programmer\'s Mindset" and why its approach to computational thinking is worth your weekend.',
     publishedAt: '2025-07-18',
     body: book2Body.trim(),
+    year: '25',
   },
   {
     slug: 'console',
@@ -132,6 +143,7 @@ export const posts: Post[] = [
       'From serial consoles to secure network consoles and tunneling on ESP32, based on a recent ESP32 Community Meeting talk.',
     publishedAt: '2025-08-02',
     body: consoleBody.trim(),
+    year: '25',
   },
   {
     slug: 'coroutines',
@@ -140,6 +152,7 @@ export const posts: Post[] = [
       'Exploring C++20 coroutines as a way to write async code that looks sync, comparing classic FreeRTOS-task-per-client to coroutine-based HTTP servers.',
     publishedAt: '2025-08-12',
     body: coroutinesBody.trim(),
+    year: '25',
   },
   {
     slug: 'dnssec',
@@ -148,6 +161,7 @@ export const posts: Post[] = [
       'Thoughts on a mis-issued TLS certificate for 1.1.1.1 and what it means for encrypted DNS, DoH/DoT, and IoT devices relying on them.',
     publishedAt: '2025-08-22',
     body: dnssecBody.trim(),
+    year: '25',
   },
   {
     slug: 'eppp',
@@ -156,6 +170,7 @@ export const posts: Post[] = [
       'Announcing eppp-link, a generic PPP/link component for microcontrollers with multiple transports, logical channels, and offloading use cases.',
     publishedAt: '2025-09-01',
     body: epppBody.trim(),
+    year: '25',
   },
   {
     slug: 'fuzzing',
@@ -164,6 +179,7 @@ export const posts: Post[] = [
       'A getting-started fuzzing guide for embedded and firmware engineers, with practical examples and tool recommendations.',
     publishedAt: '2025-09-05',
     body: fuzzingBody.trim(),
+    year: '25',
   },
   {
     slug: 'fuzzing2',
@@ -172,6 +188,7 @@ export const posts: Post[] = [
       'Notes from a LinuxDays talk on fuzzing fundamentals for firmware engineers, including simple experiments you can run locally.',
     publishedAt: '2025-09-12',
     body: fuzzing2Body.trim(),
+    year: '25',
   },
   {
     slug: 'ifndr',
@@ -180,6 +197,7 @@ export const posts: Post[] = [
       'An explanation of IFNDR with a delegating-constructor example, and practical advice on avoiding silent C++ pitfalls.',
     publishedAt: '2025-09-18',
     body: ifndrBody.trim(),
+    year: '25',
   },
   {
     slug: 'kafka',
@@ -188,6 +206,7 @@ export const posts: Post[] = [
       'Running librdkafka on ESP-IDF to stream data from ESP32 into Kafka, and thoughts on bridging MQTT and Kafka at the edge.',
     publishedAt: '2025-09-25',
     body: kafkaBody.trim(),
+    year: '25',
   },
   {
     slug: 'linuxdays25',
@@ -196,6 +215,7 @@ export const posts: Post[] = [
       'Announcement of a LinuxDays 2025 talk in Prague about practical fuzz-testing approaches, tools, and CI integration.',
     publishedAt: '2025-10-01',
     body: linuxdays25Body.trim(),
+    year: '25',
   },
   {
     slug: 'linuxdays25_post',
@@ -204,6 +224,7 @@ export const posts: Post[] = [
       'A short recap of LinuxDays 2025, slides and video links for a fuzzing presentation, and a note on a demo that didn’t crash as it should have.',
     publishedAt: '2025-10-08',
     body: linuxdays25PostBody.trim(),
+    year: '25',
   },
   {
     slug: 'lw_crypto',
@@ -212,6 +233,7 @@ export const posts: Post[] = [
       'Experiments with Ascon as a lightweight AEAD for ultra-low-power devices and secure channels on ESP32 compared to existing AEADs.',
     publishedAt: '2025-10-15',
     body: lwCryptoBody.trim(),
+    year: '25',
   },
   {
     slug: 'modem',
@@ -220,6 +242,7 @@ export const posts: Post[] = [
       'Announcing esp-modem v2.0 with improved IDE navigation, multi-connection support, URC observer improvements, and test support.',
     publishedAt: '2025-10-20',
     body: modemBody.trim(),
+    year: '25',
   },
   {
     slug: 'modem_sim',
@@ -228,6 +251,7 @@ export const posts: Post[] = [
       'Introducing a PPP-based modem simulator built on ESP-AT and ESP-Modem for testing AT commands and PPP links without real modems.',
     publishedAt: '2025-10-25',
     body: modemSimBody.trim(),
+    year: '25',
   },
   {
     slug: 'pqc1',
@@ -236,6 +260,7 @@ export const posts: Post[] = [
       'A proof-of-concept post-quantum secure TCP channel between Linux and ESP32 using ML-KEM-512 and AES-256-GCM.',
     publishedAt: '2025-11-01',
     body: pqc1Body.trim(),
+    year: '25',
   },
   {
     slug: 'pqc2',
@@ -244,6 +269,7 @@ export const posts: Post[] = [
       'A look at post-quantum crypto adoption on embedded systems, focusing on ML-KEM-based secure channels and TLS 1.3 hybrids.',
     publishedAt: '2025-11-05',
     body: pqc2Body.trim(),
+    year: '25',
   },
   {
     slug: 'pqc3',
@@ -252,6 +278,7 @@ export const posts: Post[] = [
       'A short post on post-quantum risks to secure boot and firmware trust anchors, based on an OpenAlt conference talk.',
     publishedAt: '2025-11-08',
     body: pqc3Body.trim(),
+    year: '25',
   },
   {
     slug: 'semsearch',
@@ -260,6 +287,7 @@ export const posts: Post[] = [
       'Replacing Bash reverse search with a semantic history search powered by embeddings, FAISS, and fzf.',
     publishedAt: '2025-11-12',
     body: semsearchBody.trim(),
+    year: '25',
   },
   {
     slug: 'serverless',
@@ -268,6 +296,7 @@ export const posts: Post[] = [
       'An example of brokering MQTT across remote sites using only ESP32 devices, ICE/WebRTC, and no public IPs or cloud services.',
     publishedAt: '2025-11-15',
     body: serverlessBody.trim(),
+    year: '25',
   },
   {
     slug: 'sock_utils',
@@ -276,6 +305,7 @@ export const posts: Post[] = [
       'A guide to reusable patterns and utilities for porting POSIX networking libraries like Mosquitto, Kafka, and Libssh to ESP-IDF.',
     publishedAt: '2025-11-20',
     body: sockUtilsBody.trim(),
+    year: '25',
   },
   {
     slug: 'ssh',
@@ -284,6 +314,7 @@ export const posts: Post[] = [
       'Early results from porting libssh to ESP-IDF to run an SSH server directly on ESP32, including resource figures and alternatives.',
     publishedAt: '2025-11-23',
     body: sshBody.trim(),
+    year: '25',
   },
   {
     slug: 'ssh1',
@@ -292,6 +323,7 @@ export const posts: Post[] = [
       'A follow-up on the libssh ESP-IDF port with public key auth, esp-console integration, and configuration improvements.',
     publishedAt: '2025-11-26',
     body: ssh1Body.trim(),
+    year: '25',
   },
   {
     slug: 'ssh2',
@@ -300,6 +332,7 @@ export const posts: Post[] = [
       'Announcing libssh ESP-IDF component v0.11 and how to quickly spin up an SSH server example with idf.py.',
     publishedAt: '2025-11-28',
     body: ssh2Body.trim(),
+    year: '25',
   },
   {
     slug: 'strict_alias',
@@ -308,6 +341,7 @@ export const posts: Post[] = [
       'An explanation of strict aliasing, union-based type punning, and how optimization levels can break embedded code.',
     publishedAt: '2025-12-01',
     body: strictAliasBody.trim(),
+    year: '25',
   },
   {
     slug: 'ttcn3',
@@ -316,6 +350,7 @@ export const posts: Post[] = [
       'Reflections on using Eclipse Titan and TTCN-3 for IoT protocol conformance testing and alternatives in 2025.',
     publishedAt: '2025-12-03',
     body: ttcn3Body.trim(),
+    year: '25',
   },
   {
     slug: 'tunnels',
@@ -324,6 +359,7 @@ export const posts: Post[] = [
       'A preview of a talk on advanced networking, secure consoles, and tunneling across microcontroller-based border routers and end devices.',
     publishedAt: '2025-12-05',
     body: tunnelsBody.trim(),
+    year: '25',
   },
   {
     slug: 'wifi_remote',
@@ -332,6 +368,7 @@ export const posts: Post[] = [
       'An overview of esp-wifi-remote for ESP32-P4, routing esp-wifi calls to an external Wi-Fi chip based on esp-hosted.',
     publishedAt: '2025-12-08',
     body: wifiRemoteBody.trim(),
+    year: '25',
   },
 ];
 

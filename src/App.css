@@ -64,6 +64,42 @@
   font-size: 1.1rem;
 }
 
+.year-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+}
+
+.year-tab {
+  all: unset;
+  flex: 1;
+  text-align: center;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  background: transparent;
+  color: rgba(225, 231, 255, 0.7);
+  border: 1px solid transparent;
+}
+
+.year-tab:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(225, 231, 255, 0.9);
+}
+
+.year-tab.active {
+  background: linear-gradient(120deg, #536dff, #94bfff);
+  color: #040610;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(72, 99, 255, 0.25);
+}
+
 .sidebar ul {
   list-style: none;
   padding: 0;

@@ -100,6 +100,34 @@
   box-shadow: 0 4px 12px rgba(72, 99, 255, 0.25);
 }
 
+.search-box {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(225, 231, 255, 0.95);
+  font-size: 0.9rem;
+  font-family: inherit;
+  transition: all 0.2s;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: rgba(225, 231, 255, 0.5);
+}
+
+.search-input:focus {
+  border-color: #536dff;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 0 3px rgba(83, 109, 255, 0.15);
+}
+
 .sidebar ul {
   list-style: none;
   padding: 0;

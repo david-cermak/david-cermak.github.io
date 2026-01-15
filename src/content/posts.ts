@@ -44,8 +44,18 @@ import mqttFuzzBody from '../blog/25/mqtt_fuzz.md?raw';
 import cppMlKemBody from '../blog/25/cpp-mlkem.md?raw';
 import signalRatchetBody from '../blog/25/signal_ratchet.md?raw';
 import rtosChoicesBody from '../blog/26/rtos_choice.md?raw';
+import mbedtlsMigrateBody from '../blog/26/mbedtls_migrate.md?raw';
 
 export const posts: Post[] = [
+  {
+    slug: 'mbedtls_migrate',
+    title: 'Migrating from mbedTLS v3 to v4',
+    description:
+      'A guide to migrating from mbedTLS v3 to v4, including what exactly needs to change and how to migrate step by step. The presentation is aimed at mbedTLS users (not maintainers).',
+    publishedAt: '2026-01-15',
+    body: mbedtlsMigrateBody.trim(),
+    year: '26',
+  },
   {
     slug: 'rtos_choice',
     title: 'Choosing an RTOS for embedded systems',

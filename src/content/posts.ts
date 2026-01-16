@@ -45,8 +45,17 @@ import cppMlKemBody from '../blog/25/cpp-mlkem.md?raw';
 import signalRatchetBody from '../blog/25/signal_ratchet.md?raw';
 import rtosChoicesBody from '../blog/26/rtos_choice.md?raw';
 import mbedtlsMigrateBody from '../blog/26/mbedtls_migrate.md?raw';
-
+import edgeAiBody from '../blog/26/edge_ai.md?raw';
 export const posts: Post[] = [
+  {
+    slug: 'edge_ai',
+    title: 'cloud vs. device? No, "edge + device"',
+    description:
+      'A look at an interesting paper on collaborative Edge-IoT AI for intrusion detection.',
+    publishedAt: '2026-01-16',
+    body: edgeAiBody.trim(),
+    year: '26',
+  },
   {
     slug: 'mbedtls_migrate',
     title: 'Migrating from mbedTLS v3 to v4',

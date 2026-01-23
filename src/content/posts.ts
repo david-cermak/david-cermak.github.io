@@ -46,7 +46,37 @@ import signalRatchetBody from '../blog/25/signal_ratchet.md?raw';
 import rtosChoicesBody from '../blog/26/rtos_choice.md?raw';
 import mbedtlsMigrateBody from '../blog/26/mbedtls_migrate.md?raw';
 import edgeAiBody from '../blog/26/edge_ai.md?raw';
+import clangHardeningBody from '../blog/26/clang_hardening.md?raw';
+import infineonWifi7Body from '../blog/26/infineon_wifi7.md?raw';
+import fuzzingIdfBody from '../blog/26/fuzzing_idf.md?raw';
 export const posts: Post[] = [
+  {
+    slug: 'fuzzing_idf',
+    title: 'Start fuzzing in 5 steps',
+    description:
+      'A step-by-step guide to get started with fuzzing ESP-IDF components.',
+    publishedAt: '2026-01-22',
+    body: fuzzingIdfBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'infineon_wifi7',
+    title: 'ICYMI: AIROC™ ACW741x: Infineon\'s Wi-Fi 7 IoT tri-radio SoC',
+    description:
+      'A look at Infineon\'s Wi-Fi 7 IoT tri-radio SoC.',
+    publishedAt: '2026-01-20',
+    body: infineonWifi7Body.trim(),
+    year: '26',
+  },
+  {
+    slug: 'clang_hardening',
+    title: 'Clang Hardening Cheat Sheet',
+    description:
+      'A cheat sheet for Clang Hardening, including practical and interesting compiler and linker flags.',
+    publishedAt: '2026-01-19',
+    body: clangHardeningBody.trim(),
+    year: '26',
+  },
   {
     slug: 'edge_ai',
     title: 'cloud vs. device? No, "edge + device"',

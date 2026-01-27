@@ -49,7 +49,17 @@ import edgeAiBody from '../blog/26/edge_ai.md?raw';
 import clangHardeningBody from '../blog/26/clang_hardening.md?raw';
 import infineonWifi7Body from '../blog/26/infineon_wifi7.md?raw';
 import fuzzingIdfBody from '../blog/26/fuzzing_idf.md?raw';
+import telnetdStoryBody from '../blog/26/telnetd_story.md?raw';
 export const posts: Post[] = [
+  {
+    slug: 'telnetd_story',
+    title: 'What embedded folks can learn from the recent `telnetd` vulnerability',
+    description:
+      'A look at the recent telnetd vulnerability and what embedded engineers can learn from it.',
+    publishedAt: '2026-01-27',
+    body: telnetdStoryBody.trim(),
+    year: '26',
+  },
   {
     slug: 'fuzzing_idf',
     title: 'Start fuzzing in 5 steps',

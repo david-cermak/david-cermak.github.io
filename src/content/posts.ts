@@ -50,7 +50,17 @@ import clangHardeningBody from '../blog/26/clang_hardening.md?raw';
 import infineonWifi7Body from '../blog/26/infineon_wifi7.md?raw';
 import fuzzingIdfBody from '../blog/26/fuzzing_idf.md?raw';
 import telnetdStoryBody from '../blog/26/telnetd_story.md?raw';
+import humanizerBody from '../blog/26/humanizer.md?raw';
 export const posts: Post[] = [
+  {
+    slug: 'humanizer',
+    title: 'Humanizer: Remove AI Writing Patterns',
+    description:
+      'A tool to remove AI writing patterns from text.',
+    publishedAt: '2026-01-29',
+    body: humanizerBody.trim(),
+    year: '26',
+  },
   {
     slug: 'telnetd_story',
     title: 'What embedded folks can learn from the recent `telnetd` vulnerability',

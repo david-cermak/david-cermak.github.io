@@ -51,7 +51,38 @@ import infineonWifi7Body from '../blog/26/infineon_wifi7.md?raw';
 import fuzzingIdfBody from '../blog/26/fuzzing_idf.md?raw';
 import telnetdStoryBody from '../blog/26/telnetd_story.md?raw';
 import humanizerBody from '../blog/26/humanizer.md?raw';
+import coroutinesCfiBody from '../blog/26/coroutines_cfi.md?raw';
+import cveFactoryBody from '../blog/26/cve_factory.md?raw';
+import libsshZephyrBody from '../blog/26/libssh_zephyr.md?raw';
+
 export const posts: Post[] = [
+  {
+    slug: 'libssh_zephyr',
+    title: 'SSH server on ESP32: ESP-IDF or Zephyr?',
+    description:
+      'A comparison of ESP-IDF and Zephyr for running an SSH server on ESP32.',
+    publishedAt: '2026-02-4',
+    body: libsshZephyrBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'cve_factory',
+    title: 'Is this CVE actually relevant to our device?',
+    description:
+      'A tool to help determine if a CVE is actually relevant to a specific device.',
+    publishedAt: '2026-02-3',
+    body: cveFactoryBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'coroutines_cfi',
+    title: 'Are C++ coroutines control flow safe?',
+    description:
+      'A look at the limitations of CFI when coroutines are used.',
+    publishedAt: '2026-02-2',
+    body: coroutinesCfiBody.trim(),
+    year: '26',
+  },
   {
     slug: 'humanizer',
     title: 'Humanizer: Remove AI Writing Patterns',

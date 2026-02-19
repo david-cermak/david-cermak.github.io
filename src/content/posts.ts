@@ -54,8 +54,18 @@ import humanizerBody from '../blog/26/humanizer.md?raw';
 import coroutinesCfiBody from '../blog/26/coroutines_cfi.md?raw';
 import cveFactoryBody from '../blog/26/cve_factory.md?raw';
 import libsshZephyrBody from '../blog/26/libssh_zephyr.md?raw';
+import fuzzingLanguageBody from '../blog/26/fuzzing_language.md?raw';
 
 export const posts: Post[] = [
+  {
+    slug: 'fuzzing_language',
+    title: 'Fuzzing detected more bugs in C++/Rust than Java/C?',
+    description:
+      'An interesting research on the influence of programming language on fuzzing outcomes.',
+    publishedAt: '2026-02-16',
+    body: fuzzingLanguageBody.trim(),
+    year: '26',
+  },
   {
     slug: 'libssh_zephyr',
     title: 'SSH server on ESP32: ESP-IDF or Zephyr?',

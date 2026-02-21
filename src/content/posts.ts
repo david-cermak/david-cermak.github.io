@@ -55,8 +55,18 @@ import coroutinesCfiBody from '../blog/26/coroutines_cfi.md?raw';
 import cveFactoryBody from '../blog/26/cve_factory.md?raw';
 import libsshZephyrBody from '../blog/26/libssh_zephyr.md?raw';
 import fuzzingLanguageBody from '../blog/26/fuzzing_language.md?raw';
+import miscompilationBody from '../blog/26/miscompilation.md?raw';
 
 export const posts: Post[] = [
+  {
+    slug: 'miscompilation',
+    title: 'Miscompilation in 2026? both gcc and clang? ...not really',
+    description:
+      'A look at the recent miscompilation in gcc and clang.',
+    publishedAt: '2026-02-18',
+    body: miscompilationBody.trim(),
+    year: '26',
+  },
   {
     slug: 'fuzzing_language',
     title: 'Fuzzing detected more bugs in C++/Rust than Java/C?',

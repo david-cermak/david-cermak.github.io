@@ -56,8 +56,17 @@ import cveFactoryBody from '../blog/26/cve_factory.md?raw';
 import libsshZephyrBody from '../blog/26/libssh_zephyr.md?raw';
 import fuzzingLanguageBody from '../blog/26/fuzzing_language.md?raw';
 import miscompilationBody from '../blog/26/miscompilation.md?raw';
-
+import embeddedClawBody from '../blog/26/embedded_claw.md?raw';
 export const posts: Post[] = [
+  {
+    slug: 'embedded_claw',
+    title: 'MiniClaw & ZeroClaw: An embedded engineer\'s look at the OpenClaw wave',
+    description:
+      'An embedded engineer\'s look at the OpenClaw wave, including MiniClaw and ZeroClaw.',
+    publishedAt: '2026-02-22',
+    body: embeddedClawBody.trim(),
+    year: '26',
+  },
   {
     slug: 'miscompilation',
     title: 'Miscompilation in 2026? both gcc and clang? ...not really',

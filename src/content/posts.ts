@@ -57,7 +57,17 @@ import libsshZephyrBody from '../blog/26/libssh_zephyr.md?raw';
 import fuzzingLanguageBody from '../blog/26/fuzzing_language.md?raw';
 import miscompilationBody from '../blog/26/miscompilation.md?raw';
 import embeddedClawBody from '../blog/26/embedded_claw.md?raw';
+import cppArchitectureReviewBody from '../blog/26/cpp_architecture_review.md?raw';
 export const posts: Post[] = [
+  {
+    slug: 'cpp_architecture_review',
+    title: 'Book Review: Software Architecture with C++',
+    description:
+      'A review of the book "Software Architecture with C++" by Adrian Ostrowski, Piotr Gaczkowski, Andrey Gavrilin.',
+    publishedAt: '2026-03-30',
+    body: cppArchitectureReviewBody.trim(),
+    year: '26',
+  },
   {
     slug: 'embedded_claw',
     title: 'MiniClaw & ZeroClaw: An embedded engineer\'s look at the OpenClaw wave',

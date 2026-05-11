@@ -58,7 +58,17 @@ import fuzzingLanguageBody from '../blog/26/fuzzing_language.md?raw';
 import miscompilationBody from '../blog/26/miscompilation.md?raw';
 import embeddedClawBody from '../blog/26/embedded_claw.md?raw';
 import cppArchitectureReviewBody from '../blog/26/cpp_architecture_review.md?raw';
+import compArchReviewBody from '../blog/26/comp_arch_review.md?raw';
 export const posts: Post[] = [
+  {
+    slug: 'comp_arch_review',
+    title: 'Book Review: Modern Computer Architecture and Organization',
+    description:
+      'A review of the book "Modern Computer Architecture and Organization" by Jim Ledin.',
+    publishedAt: '2026-05-11',
+    body: compArchReviewBody.trim(),
+    year: '26',
+  },
   {
     slug: 'cpp_architecture_review',
     title: 'Book Review: Software Architecture with C++',

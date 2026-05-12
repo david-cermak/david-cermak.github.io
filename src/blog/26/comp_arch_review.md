@@ -1,8 +1,8 @@
 # Book review: *Modern Computer Architecture and Organization* (3rd ed.)
 
-**Jim Ledin** — Packt Publishing, 2026 (~736 pages). ISBN 978-1-80602-803-0.
+**Jim Ledin**  Packt Publishing, 2026 (697 pages). ISBN 978-1-80602-803-0.
 
-*These notes are from an **embedded developer** perspective—someone working with ESP32, ESP-IDF, and RTOS-based systems who still **needs** the bigger picture of how today’s machines are designed and built.*
+*These notes are from an **embedded developer** perspective; someone working with ESP32, ESP-IDF, and RTOS-based systems who still **needs** the bigger picture of how today’s machines are designed and built.*
 
 ![computer_arch](/images/comp_arch.jpg)
 
@@ -18,10 +18,10 @@ It contains a lot of examples and exercises. It introduces you to the 6502 proce
 Strong fit. The book answers “what actually happens under my `main()`?” in a structured way: logic, ISA, pipelines, caches, virtual memory, drivers, boot, then outward into domains you will touch in industry.
 
 **Embedded developers**  
-Very worthwhile. Chapters on the hardware–software interface, real-time and DSP-flavored material, ISAs you see in practice (ARM, RISC-V), memory and buses, and performance-oriented processor features line up with how you reason about latency, determinism, and why the core behaves the way it does. It is **not** a peripheral cookbook, not a deep dive into a specific datasheet, but it **bridges** the gap between “I flash firmware” and “I understand the machine.”
+Very worthwhile. Chapters on the hardware–software interface, real-time and DSP-flavored material, ISAs you see in practice (ARM, RISC-V), memory and buses, and performance-oriented processor features line up with how you reason about latency, determinism, and why the core behaves the way it does. It is **not** a peripheral cookbook, not a deep dive into a specific datasheet, but it **bridges** the gap between your firmware and the machine that runs it, and more importantly, other machines that could run it.
 
 **Mid-level and senior engineers**  
-Read it **selectively**: skim what you already live daily, then use the later parts as **orientation**—GPU tensor paths, LLM training vs. inference at datacenter scale, zero-trust and TEE-flavored security, vehicle compute stacks. The recurring idea is that **requirements and constraints repeat across domains**; only the scale and the dominant bottleneck change.
+Read it **selectively**: skim what you already live daily, then use the later parts as **orientation** -- GPU tensor paths, LLM training vs. inference at datacenter scale, zero-trust and TEE-flavored security, vehicle compute stacks. The recurring idea is that **requirements and constraints repeat across domains**; only the scale and the dominant bottleneck change.
 
 **Deep specialists**  
 You may not “need” the whole volume, but skimming the **future directions** material (Moore’s law revisited, specialization vs. general-purpose CPUs, uncertainty about the next disruption) is still useful as a structured refresher. The author puts it plainly: "the next significant technological breakthrough in computing devices will be something we haven't yet considered."
@@ -34,9 +34,9 @@ The third edition is organized in **three parts** and **nineteen chapters**:
 
 | Part | Chapters | Focus |
 |------|-----------|--------|
-| **Part 1 — Fundamentals** | 1–6 | History and trends; digital logic; processor elements (6502); system components (memory, I/O, buses); hardware–software interface (firmware, boot, OS, threads); specialized domains (real-time, DSP, example system types). |
-| **Part 2 — Processor architectures and instruction sets** | 7–12 | Von Neumann / Harvard / virtual memory / MMU; performance (caches, pipelines, SMT, SIMD); privileged modes, FP, power, security features; **GPUs**; x86/x64 and ARM; **RISC-V** (including FPGA-oriented material). |
-| **Part 3 — Computer system architectures** | 13–19 | Virtualization and cloud; **domain-specific** systems (mobile, PC, warehouse scale, ML); **LLM** compute and datacenters; **cybersecurity** and confidential computing; **blockchain** / Bitcoin mining; **self-driving** stacks; **quantum** and other futures, plus guidance on staying current. |
+| **Part 1:  Fundamentals** | 1–6 | History and trends; digital logic; processor elements (6502); system components (memory, I/O, buses); hardware–software interface (firmware, boot, OS, threads); specialized domains (real-time, DSP, example system types). |
+| **Part 2:  Processor architectures and instruction sets** | 7–12 | Von Neumann / Harvard / virtual memory / MMU; performance (caches, pipelines, SMT, SIMD); privileged modes, FP, power, security features; **GPUs**; x86/x64 and ARM; **RISC-V** (including FPGA-oriented material). |
+| **Part 3:  Computer system architectures** | 13–19 | Virtualization and cloud; **domain-specific** systems (mobile, PC, warehouse scale, ML); **LLM** compute and datacenters; **cybersecurity** and confidential computing; **blockchain** / Bitcoin mining; **self-driving** stacks; **quantum** and other futures, plus guidance on staying current. |
 
 So the topics develop: **transistors → ISA → whole system → headline workloads and risks**.
 
@@ -85,14 +85,14 @@ That sets up **quantum** as a possible discontinuity -- not a drop-in faster CPU
 
 **4.8 / 5** from this embedded reader’s angle.
 
-That score is easy to justify from everything above: the **end-to-end arc** (silicon logic through datacenter-scale workloads), the **third-edition currency** (GPUs, LLMs, security, vehicles, quantum orientation), the **serious teaching apparatus** (worked examples, end-of-chapter exercises with solutions, supporting repo), and—for embedded readers—the **bridge** between flashing firmware and really understanding the machine. I would recommend it across the seniority bands **described earlier** without hesitation. The only reason I **deduct 0.2** is that **pacing and path are on you**: the book does not hand you a skip list by experience level—newcomers should treat the exercises as core, while veterans will get the most from it as a **guided survey** and a **worthy reference**, skimming what they already live daily.
+That score is easy to justify from everything above: the **end-to-end arc** (silicon logic through datacenter-scale workloads), the **third-edition currency** (GPUs, LLMs, security, vehicles, quantum orientation), the **serious teaching apparatus** (worked examples, end-of-chapter exercises with solutions, supporting repo), and for embedded readers the **bridge** between the firmware and the hardware architeture that runs it. I would recommend it across the seniority levels **described earlier** without hesitation. The only reason I **deduct 0.2** is that **pacing and path are on you**: the book does not hand you a skip list by experience level -- newcomers should treat the exercises as core, while veterans will get the most from it as a **guided survey** and a **worthy reference**, skimming what they already live daily.
 
-If you want **one** book that connects **logic gates, ISAs, memory, OS boundaries, accelerators, and the shape of modern workloads**, this is an **excellent** choice—just match depth and chapter order to your background and **priorities**.
+If you want **one** book that connects **logic gates, ISAs, memory, OS boundaries, accelerators, and the shape of modern workloads**, this is an **excellent** choice, just match depth and chapter order to your background and **priorities**.
 
 ---
 
 ## Looking forward
 
-The third edition is **remarkably current**—an **up-to-date** read: the **LLM hardware and datacenter** material and the **quantum computing** orientation match where the field is in 2025–2026. It is still wise to read it with the same **humility** as Ledin asks of the field. A textbook (even as fresh as this one) is a **snapshot**. Silicon, models, and threat timelines keep moving, and no single volume can track every adjacent discipline.
+The third edition is remarkably current and **up-to-date** read: the **LLM hardware and datacenter** material and the **quantum computing** orientation match where the field is in 2025–2026. It is still wise to read it with the same **humility** as Ledin asks of the field. A textbook (even as fresh as this one) is a **snapshot**. Silicon, models, and threat timelines keep moving, and no single volume can track every adjacent discipline.
 Use this book as **strong guidance** from gates to GPUs to “LLM economics,” and stay **curious and provisional** about the edges.
-As the author put it: "The next major advance may be a new product type, a novel technology, or a combination of both. Currently, we don't know what it will be or when it will happen, but we can say with confidence that such changes are coming."
+As the author puts it: "The next major advance may be a new product type, a novel technology, or a combination of both. Currently, we don't know what it will be or when it will happen, but we can say with confidence that such changes are coming."

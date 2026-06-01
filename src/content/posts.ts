@@ -85,8 +85,58 @@ import sshPqcBody from '../blog/26/ssh_pqc.md?raw';
 import cmakeDebugBody from '../blog/26/cmake_debug.md?raw';
 import llmWikiBody from '../blog/26/llm_wiki.md?raw';
 import betterAgentsBody from '../blog/26/better_agents.md?raw';
+import cleverHansBody from '../blog/26/clever_hans.md?raw';
+import breakHqcBody from '../blog/26/break_hqc.md?raw';
+import cppAnother11Body from '../blog/26/cpp_another11.md?raw';
+import wolfsslCBody from '../blog/26/wolfssl_c.md?raw';
+import aprilRecapBody from '../blog/26/april_recap.md?raw';
 
 export const posts: Post[] = [
+  {
+    slug: 'clever_hans',
+    title: 'Are AI Models Just Counting Horses? Clever Hans moment',
+    description:
+      'An interesting take on the Clever Hans moment.',
+    publishedAt: '2026-04-18',
+    body: cleverHansBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'break_hqc',
+    title: 'Breaking PQC KEM on STM32? CTU researchers demonstrated a practical power analysis on HQC',
+    description:
+      'An interesting take on the breaking PQC KEM on STM32.',
+    publishedAt: '2026-04-19',
+    body: breakHqcBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'cpp_another11',
+    title: 'Is 2026 Another 2011 for C++? Slides of the BeCPP 2026 published last week',
+    description:
+      'An interesting take on the BeCPP 2026.',
+    publishedAt: '2026-04-20',
+    body: cppAnother11Body.trim(),
+    year: '26',
+  },
+  {
+    slug: 'wolfssl_c',
+    title: 'Why C still dominates crypto code? wolfSSL published an interesting article last week:',
+    description:
+      'An interesting take on the wolfSSL article.',
+    publishedAt: '2026-04-21',
+    body: wolfsslCBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'april_recap',
+    title: 'May the first memory access be a cache hit! It\'s May 1st, so let\'s take a look at what happened in April:',
+    description:
+      'An interesting take on the April recap.',
+    publishedAt: '2026-05-01',
+    body: aprilRecapBody.trim(),
+    year: '26',
+  },
   {
     slug: 'const_time_impl',
     title: 'Constant-time implementation🤔? Your compiler might break it.',

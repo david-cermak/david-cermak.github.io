@@ -90,8 +90,68 @@ import breakHqcBody from '../blog/26/break_hqc.md?raw';
 import cppAnother11Body from '../blog/26/cpp_another11.md?raw';
 import wolfsslCBody from '../blog/26/wolfssl_c.md?raw';
 import aprilRecapBody from '../blog/26/april_recap.md?raw';
+import threadFuzzerBody from '../blog/26/thread_fuzzer.md?raw';
+import cpp26PrettyBody from '../blog/26/cpp26_pretty.md?raw';
+import mythosTakeBody from '../blog/26/mythos_take.md?raw';
+import staticDynAnBody from '../blog/26/static_dyn_an.md?raw';
+import supplyChain3Body from '../blog/26/supply_chain3.md?raw';
+import supplyChain4Body from '../blog/26/supply_chain4.md?raw';
 
 export const posts: Post[] = [
+  {
+    slug: 'thread_fuzzer',
+    title: 'ThreadFuzzer: Why fuzzing OpenThread Matter(s)',
+    description:
+      'An interesting take on the ThreadFuzzer.',
+    publishedAt: '2026-05-04',
+    body: threadFuzzerBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'cpp26_pretty',
+    title: 'Pretty-printing structs in C++? No macros, no external lib, just C++26 and GCC 16.1',
+    description:
+      'An interesting take on the C++26 pretty-printing.',
+    publishedAt: '2026-05-05',
+    body: cpp26PrettyBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'mythos_take',
+    title: 'Mozilla fixed 423 Firefox security bugs in April, but... is it all about Mythos?',
+    description:
+      'An interesting take on the Mythos.',
+    publishedAt: '2026-05-06',
+    body: mythosTakeBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'static_dyn_an',
+    title: 'Mitigating False Positives in Static Memory Safety Analysis of Rust Programs via Reinforcement Learning',
+    description:
+      'An interesting take on the static memory safety analysis of Rust programs.',
+    publishedAt: '2026-05-07',
+    body: staticDynAnBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'supply_chain3',
+    title: '3 Lessons for GitHub Actions maintainers (from the recent "Mini Shai-Hulud" supply-chain attack)',
+    description:
+      'An interesting take on the supply-chain attack.',
+    publishedAt: '2026-05-08',
+    body: supplyChain3Body.trim(),
+    year: '26',
+  },
+  {
+    slug: 'supply_chain4',
+    title: 'ICYMI 👉 Another "TeamPCP strikes again" (from this morning)',
+    description:
+      'An interesting take on the supply-chain attack.',
+    publishedAt: '2026-05-09',
+    body: supplyChain4Body.trim(),
+    year: '26',
+  },
   {
     slug: 'clever_hans',
     title: 'Are AI Models Just Counting Horses? Clever Hans moment',

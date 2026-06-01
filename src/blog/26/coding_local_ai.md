@@ -17,4 +17,4 @@ If your local coding assistant feels confused, check this first.
 Increase the context: `OLLAMA_CONTEXT_LENGTH=32768`
 
 Sometimes the problem isn’t the model. It’s that your coding assistant is working with 4K tokens of memory
-Read more 👉 https://lnkd.in/d4DuxBer
+Read more 👉 https://docs.ollama.com/context-length

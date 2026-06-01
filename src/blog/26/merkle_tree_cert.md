@@ -20,7 +20,7 @@ And what's there for Embedded?
 4️⃣ Post-quantum migration is architectural
  - it’s not just "swap algorithms", it’s redesigning protocols.
 
-I built a small Merkle-tree lab demonstrating the idea using Google’s Trillian transparency logs👉https://lnkd.in/dRgrPNF5
+I built a small Merkle-tree lab demonstrating the idea using Google’s Trillian transparency logs👉https://github.com/david-cermak/merkle-tree-lab
 It shows how to log certificates, generate inclusion proofs, and verify a simple “Merkle certificate”.
 
 Embedded developers often ignore hashtag#PQC (understandably, perhaps...), but this part we shouldn’t miss.

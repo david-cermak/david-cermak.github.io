@@ -4,7 +4,7 @@ Dear network,
 I’d like to share an upcoming interview with Sándor Dargó (Senior Software Engineer at Spotify):
 "Clean C++ at Scale": Live session + AMA
 📅 March 26 | 17:30–19:00 CET | Online
-👉 https://lnkd.in/dySzg-qw
+👉 https://www.eventbrite.com/e/clean-c-at-scale-with-sandor-dargo-spotify-registration-1981991216081?aff=linkedin
 
 Topics include:
 1) Clean code vs performance vs binary size

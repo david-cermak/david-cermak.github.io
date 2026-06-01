@@ -4,7 +4,7 @@ After a few busy days at Embedded World in Nuremberg, I wanted to share the topi
 
 There's already a nice article which captured the big picture really well:
 *10 Strategic Trends Driving Embedded Systems*
-🔗https://lnkd.in/dmV742Ri
+🔗https://www.forbes.com/sites/moorinsights/2026/03/13/embedded-world-2026---10-strategic-trends-driving-embedded-systems/
 
 My personal list of topics is (almost) in line with those trends:
 1️⃣ *AI everywhere*

@@ -1,6 +1,6 @@
 Social-engineer your AI reviewer? "Just a cleanup" → LGTM👍
 
-Interesting paper from yesterday👉https://lnkd.in/ejcK-TZk
+Interesting paper from yesterday👉https://arxiv.org/html/2603.18740v1
 showcasing a simple experiment:
 * Reintroduce an old vulnerability
 * Frame it as "refactor" or "performance improvement"

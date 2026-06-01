@@ -71,7 +71,97 @@ import codingLocalAiBody from '../blog/26/coding_local_ai.md?raw';
 import cppAtScaleBody from '../blog/26/cpp_at_scale.md?raw';
 import airsnitchBody from '../blog/26/airsnitch.md?raw';
 import memsafetyRustBody from '../blog/26/memsafety_rust.md?raw';
+import mongooseVulnBody from '../blog/26/mongoose_vuln.md?raw';
+import quic1Body from '../blog/26/quic1.md?raw';
+import irohEsp32Body from '../blog/26/iroh_esp32.md?raw';
+import supplyChain1Body from '../blog/26/supply_chain1.md?raw';
+import supplyChain2Body from '../blog/26/supply_chain2.md?raw';
+import cpp26DoneBody from '../blog/26/cpp26_done.md?raw';
+import claudeLeakBody from '../blog/26/claude_leak.md?raw';
+import cpp26RecompileBody from '../blog/26/cpp26_recompile.md?raw';
+
 export const posts: Post[] = [
+  {
+    slug: 'cpp26_done',
+    title: 'C++26 is done✅, says Herb Sutter',
+    description:
+      'A small step from C++23, but kind of a giant leap🚀 for the language.',
+    publishedAt: '2026-03-19',
+    body: cpp26DoneBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'claude_leak',
+    title: 'Today’s news is full of the Claude source leak',
+    description:
+      'An interesting take on the Claude source leak.',
+    publishedAt: '2026-03-19',
+    body: claudeLeakBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'cpp26_recompile',
+    title: 'Herb Sutter on UB: "Just recompile it with C++26"',
+    description:
+      'An interesting take on UB by Mr. Herb Sutter.',
+    publishedAt: '2026-03-19',
+    body: cpp26RecompileBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'mongoose_vuln',
+    title: 'Recent vulnerabilities in Mongoose networking lib',
+    description:
+      'An interesting advisory popped up this weekend: It affects v7.0-7.20 of the Mongoose networking library.',
+    publishedAt: '2026-03-19',
+    body: mongooseVulnBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'quic1',
+    title: 'Quick intro to QUIC (Embedded angle)',
+    description:
+      'A quick intro to QUIC (Embedded angle).',
+    publishedAt: '2026-03-19',
+    body: quic1Body.trim(),
+    year: '26',
+  },
+  {
+    slug: 'iroh_esp32',
+    title: 'What is Iroh? ...and can it run on ESP32?',
+    description:
+      'A look at Iroh and what it can run on ESP32.',
+    publishedAt: '2026-03-19',
+    body: irohEsp32Body.trim(),
+    year: '26',
+  },
+  {
+    slug: 'supply_chain1',
+    title: 'When your scanner is the breach: Trivy supply-chain compromise and what our CI should change tomorrow',
+    description:
+      'A look at the Trivy supply-chain compromise and what our CI should change tomorrow.',
+    publishedAt: '2026-03-19',
+    body: supplyChain1Body.trim(),
+    year: '26',
+  },
+  {
+    slug: 'supply_chain2',
+    title: 'Hey embedded devs👋 we should *really* check our CI jobs',
+    description:
+      'A look at the recent supply-chain compromises and what our CI should change tomorrow.',
+    publishedAt: '2026-03-19',
+    body: supplyChain2Body.trim(),
+    year: '26',
+  },
+  {
+    slug: 'mongoose_vuln',
+    title: 'Recent vulnerabilities in Mongoose networking lib',
+    description:
+      'An interesting advisory popped up this weekend: It affects v7.0-7.20 of the Mongoose networking library.',
+    publishedAt: '2026-03-19',
+    body: mongooseVulnBody.trim(),
+    year: '26',
+  },
   {
     slug: 'comp_arch_review',
     title: 'Book Review: Modern Computer Architecture and Organization',

@@ -73,6 +73,7 @@ import airsnitchBody from '../blog/26/airsnitch.md?raw';
 import memsafetyRustBody from '../blog/26/memsafety_rust.md?raw';
 import mongooseVulnBody from '../blog/26/mongoose_vuln.md?raw';
 import quic1Body from '../blog/26/quic1.md?raw';
+import quic2Body from '../blog/26/quic2.md?raw';
 import irohEsp32Body from '../blog/26/iroh_esp32.md?raw';
 import supplyChain1Body from '../blog/26/supply_chain1.md?raw';
 import supplyChain2Body from '../blog/26/supply_chain2.md?raw';
@@ -109,21 +110,21 @@ export const posts: Post[] = [
     year: '26',
   },
   {
-    slug: 'mongoose_vuln',
-    title: 'Recent vulnerabilities in Mongoose networking lib',
-    description:
-      'An interesting advisory popped up this weekend: It affects v7.0-7.20 of the Mongoose networking library.',
-    publishedAt: '2026-03-19',
-    body: mongooseVulnBody.trim(),
-    year: '26',
-  },
-  {
     slug: 'quic1',
     title: 'Quick intro to QUIC (Embedded angle)',
     description:
       'A quick intro to QUIC (Embedded angle).',
     publishedAt: '2026-03-19',
     body: quic1Body.trim(),
+    year: '26',
+  },
+  {
+    slug: 'quic2',
+    title: 'QUIC on ESP32: Practical demo',
+    description:
+      'A practical demo of QUIC on ESP32.',
+    publishedAt: '2026-03-20',
+    body: quic2Body.trim(),
     year: '26',
   },
   {

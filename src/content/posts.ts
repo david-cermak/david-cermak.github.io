@@ -96,8 +96,48 @@ import mythosTakeBody from '../blog/26/mythos_take.md?raw';
 import staticDynAnBody from '../blog/26/static_dyn_an.md?raw';
 import supplyChain3Body from '../blog/26/supply_chain3.md?raw';
 import supplyChain4Body from '../blog/26/supply_chain4.md?raw';
+import cppPunningBody from '../blog/26/cpp_punning.md?raw';
+import dcpMcpBody from '../blog/26/dcp_mcp.md?raw';
+import antiAiBody from '../blog/26/anti_ai.md?raw';
+import jobUpdateBody from '../blog/26/job_update.md?raw';
 
 export const posts: Post[] = [
+  {
+    slug: 'cpp_punning',
+    title: 'Type punning in C++: What could go wrong?',
+    description:
+      'An interesting take on the type punning in C++.',
+    publishedAt: '2026-05-12',
+    body: cppPunningBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'dcp_mcp',
+    title: 'MCP on IoT devices? It works... but maybe embedded systems need something different.',
+    description:
+      'An interesting take on the MCP on IoT devices.',
+    publishedAt: '2026-05-15',
+    body: dcpMcpBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'anti_ai',
+    title: 'Anti AI Release in Java property-based test framework',
+    description:
+      'An interesting take on the Anti AI release in Java property-based test framework.',
+    publishedAt: '2026-05-25',
+    body: antiAiBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'job_update',
+    title: 'LI: "You completed 8 years at Espressif." Me: "You\'re a senior video editor. Make me a memorial video for my work anniversary."😄',
+    description:
+      'An interesting take on the job update.',
+    publishedAt: '2026-05-31',
+    body: jobUpdateBody.trim(),
+    year: '26',
+  },
   {
     slug: 'thread_fuzzer',
     title: 'ThreadFuzzer: Why fuzzing OpenThread Matter(s)',

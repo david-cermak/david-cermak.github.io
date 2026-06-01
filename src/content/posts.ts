@@ -57,6 +57,10 @@ import libsshZephyrBody from '../blog/26/libssh_zephyr.md?raw';
 import fuzzingLanguageBody from '../blog/26/fuzzing_language.md?raw';
 import miscompilationBody from '../blog/26/miscompilation.md?raw';
 import embeddedClawBody from '../blog/26/embedded_claw.md?raw';
+import memsafetyCppBody from '../blog/26/memsafety_cpp.md?raw';
+import realtimeSanitizeBody from '../blog/26/realtime_sanitize.md?raw';
+import microGptBody from '../blog/26/micro_gpt.md?raw';
+import sshDropbearBody from '../blog/26/ssh_dropbear.md?raw';
 import cppArchitectureReviewBody from '../blog/26/cpp_architecture_review.md?raw';
 import compArchReviewBody from '../blog/26/comp_arch_review.md?raw';
 export const posts: Post[] = [
@@ -70,12 +74,48 @@ export const posts: Post[] = [
     year: '26',
   },
   {
+    slug: 'realtime_sanitize',
+    title: 'When Embedded means Realtime: Clang 20\'s Realtime Sanitizer',
+    description:
+      'A look at the realtime sanitizer in Clang 20.',
+    publishedAt: '2026-05-11',
+    body: realtimeSanitizeBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'micro_gpt',
+    title: '250 LOC MicroGPT...and the clones',
+    description:
+      'A look at the micro GPT project and the clones.',
+    publishedAt: '2026-05-11',
+    body: microGptBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'ssh_dropbear',
+    title: 'SSH stack on hashtag#ESP32: libssh or dropbear?',
+    description:
+      'A look at the SSH stack on ESP32: libssh or dropbear.',
+    publishedAt: '2026-05-11',
+    body: sshDropbearBody.trim(),
+    year: '26',
+  },
+  {
     slug: 'cpp_architecture_review',
     title: 'Book Review: Software Architecture with C++',
     description:
       'A review of the book "Software Architecture with C++" by Adrian Ostrowski, Piotr Gaczkowski, Andrey Gavrilin.',
     publishedAt: '2026-03-30',
     body: cppArchitectureReviewBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'memsafety_cpp',
+    title: 'Memory Safety in C++',
+    description:
+      'A look at the memory safety in C++.',
+    publishedAt: '2026-05-11',
+    body: memsafetyCppBody.trim(),
     year: '26',
   },
   {

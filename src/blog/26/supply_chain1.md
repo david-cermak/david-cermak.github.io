@@ -1,6 +1,6 @@
 When your scanner is the breach🚨: Trivy supply-chain compromise and what our CI should change tomorrow
 
-🔗 https://lnkd.in/dQvhj_if
+🔗 https://www.dataproof.co.za/index.php/2026/03/21/trivy-vulnerability-scanner-backdoored-with-credential-stealer-in-supply-chain-attack/
 The Trivy compromise is a reminder that supply-chain attacks succeed by exploiting trust, not just code.
 
 📅What happened:

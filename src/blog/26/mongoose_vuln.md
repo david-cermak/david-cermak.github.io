@@ -8,4 +8,4 @@ Security researcher Simone Margaritelli disclosed 3 major vulnerabilities in Mon
 
 Interestingly, one vulnerability was marked "ignore for now" in the code, causing all P-384 certificates to be accepted without verification😯 
 
-Read more: https://lnkd.in/dQ9xz9FN
+Read more: https://www.evilsocket.net/2026/04/02/Mongoose-Preauth-Remote-Code-Execution-and-mTLS-Bypass/

@@ -3,7 +3,7 @@ What is Iroh🦀? ...and can it run on ESP32?
 I've recently been writing about embedded endpoints/connectivity stacks:
 WebRTC, ICE, NAT traversal, QUIC, Cloudflare tunnels…
 
-Here’s another interesting one👉https://lnkd.in/dGb9ueKu
+Here’s another interesting one👉https://www.iroh.computer/blog/iroh-on-esp32
 
 So what is Iroh?
 * A Rust-based library for peer-to-peer connectivity (enabling direct device-to-device communication without relying on central servers)

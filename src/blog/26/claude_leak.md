@@ -1,8 +1,8 @@
 Today’s news is full of the Claude *source leak*
 
 Instead of looking into the leak itself, here's the repo's worth checking:
-👉 https://lnkd.in/dfRb-9Nv
-It follows the spirit of the "learn-claude-code" (https://lnkd.in/drC_fR-Z) just with the real leaked implementation
+👉 https://github.com/674019130/learn-real-claude-code
+It follows the spirit of the "learn-claude-code" (https://github.com/shareAI-lab/learn-claude-code) just with the real leaked implementation
 
 What's interesting:
 * Incognito mode

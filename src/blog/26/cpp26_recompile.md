@@ -1,6 +1,6 @@
 Herb Sutter on UB: "Just recompile it with C++26"
 
-A very interesting take on UB by Mr. Herb Sutter👉 https://lnkd.in/d3S4-Pdp
+A very interesting take on UB by Mr. Herb Sutter👉 https://herbsutter.com/2025/03/30/crate-training-tiamat-un-calling-cthulhutaming-the-ub-monsters-in-c/
 
 * C++26 eliminates uninitialized variable UB and makes bounds checking standard for vector, string, span, and more in hardened implementations.
 * Many improvements work by simply recompiling with C++26 (Google deployed similar hardening to millions of LOC with just 0.3% performance impact)

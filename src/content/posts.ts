@@ -80,8 +80,58 @@ import supplyChain2Body from '../blog/26/supply_chain2.md?raw';
 import cpp26DoneBody from '../blog/26/cpp26_done.md?raw';
 import claudeLeakBody from '../blog/26/claude_leak.md?raw';
 import cpp26RecompileBody from '../blog/26/cpp26_recompile.md?raw';
+import constTimeImplBody from '../blog/26/const_time_impl.md?raw';
+import sshPqcBody from '../blog/26/ssh_pqc.md?raw';
+import cmakeDebugBody from '../blog/26/cmake_debug.md?raw';
+import llmWikiBody from '../blog/26/llm_wiki.md?raw';
+import betterAgentsBody from '../blog/26/better_agents.md?raw';
 
 export const posts: Post[] = [
+  {
+    slug: 'const_time_impl',
+    title: 'Constant-time implementation🤔? Your compiler might break it.',
+    description:
+      'An interesting vuln popped up last week: CVE-2025-66442 in Mbed TLS (compiler-induced constant-time violation).',
+    publishedAt: '2026-04-13',
+    body: constTimeImplBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'ssh_pqc',
+    title: 'Embedded SSH with PQC KEX? Yes. But you’ll pay.',
+    description:
+      'An interesting vuln popped up last week: CVE-2025-66442 in Mbed TLS (compiler-induced constant-time violation).',
+    publishedAt: '2026-04-14',
+    body: sshPqcBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'cmake_debug',
+    title: 'Just a build script… why would you debug it? (My exact words ~10 years ago)',
+    description:
+      'An interesting vuln popped up last week: CVE-2025-66442 in Mbed TLS (compiler-induced constant-time violation).',
+    publishedAt: '2026-04-15',
+    body: cmakeDebugBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'llm_wiki',
+    title: 'Obsidian LLM Wiki for personal knowledge infra',
+    description:
+      'An interesting vuln popped up last week: CVE-2025-66442 in Mbed TLS (compiler-induced constant-time violation).',
+    publishedAt: '2026-04-16',
+    body: llmWikiBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'better_agents',
+    title: 'Better AI agents🤔? Less AI, more determinism',
+    description:
+      'An interesting vuln popped up last week: CVE-2025-66442 in Mbed TLS (compiler-induced constant-time violation).',
+    publishedAt: '2026-04-17',
+    body: betterAgentsBody.trim(),
+    year: '26',
+  },
   {
     slug: 'cpp26_done',
     title: 'C++26 is done✅, says Herb Sutter',

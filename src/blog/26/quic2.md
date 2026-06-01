@@ -10,8 +10,8 @@ QUIC is widely known web protocol, but it offers several interesting advantages 
 The protocol integrates TLS 1.3 into the transport layer over UDP.
 
 Projects:
-• Picoquic port to ESP-IDF👉 https://lnkd.in/dzt-qcWK
-• Minimal C++ version of cloudflared👉 https://lnkd.in/daHSutEd
+• Picoquic port to ESP-IDF👉 https://github.com/david-cermak/picoquic
+• Minimal C++ version of cloudflared👉 https://github.com/david-cermak/cloudflared
 See the full presentation👇
 
 ---

@@ -1,6 +1,6 @@
 I'm happy to share that I will speak at Installfest in Prague this weekend
 
-👉https://lnkd.in/eBtjH8BC
+👉https://installfest.cz/if26/en
 Topic: Quick intro to QUIC (Embedded angle)
 • protocol basics
 • speed vs. security

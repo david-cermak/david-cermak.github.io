@@ -63,6 +63,14 @@ import microGptBody from '../blog/26/micro_gpt.md?raw';
 import sshDropbearBody from '../blog/26/ssh_dropbear.md?raw';
 import cppArchitectureReviewBody from '../blog/26/cpp_architecture_review.md?raw';
 import compArchReviewBody from '../blog/26/comp_arch_review.md?raw';
+import ewHereBody from '../blog/26/ew_here.md?raw';
+import ewRecapBody from '../blog/26/ew_recap.md?raw';
+import socialEngAiBody from '../blog/26/social_eng_ai.md?raw';
+import merkleTreeCertBody from '../blog/26/merkle_tree_cert.md?raw';
+import codingLocalAiBody from '../blog/26/coding_local_ai.md?raw';
+import cppAtScaleBody from '../blog/26/cpp_at_scale.md?raw';
+import airsnitchBody from '../blog/26/airsnitch.md?raw';
+import memsafetyRustBody from '../blog/26/memsafety_rust.md?raw';
 export const posts: Post[] = [
   {
     slug: 'comp_arch_review',
@@ -74,11 +82,83 @@ export const posts: Post[] = [
     year: '26',
   },
   {
+    slug: 'memsafety_rust',
+    title: 'Memory safety in Rust? No `unsafe`, still UB.',
+    description:
+      'An interesting advisory popped up this weekend: It affects v0.2.0 of the `hivex` crate (rust bindings for a Windows registry hive library)',
+    publishedAt: '2026-03-10',
+    body: memsafetyRustBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'ew_here',
+    title: 'Greetings from Embedded World in Nuremberg!',
+    description:
+      'I\'ll be around the Espressif booth 3A-528 this week, stop by and say hello if you\'re at the show 😀',
+    publishedAt: '2026-03-13',
+    body: ewHereBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'ew_recap',
+    title: 'EW26: What people talked about',
+    description:
+      'After a few busy days at Embedded World in Nuremberg, I wanted to share the topics that kept coming up in conversations -- from my personal perspective.',
+    publishedAt: '2026-03-14',
+    body: ewRecapBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'social_eng_ai',
+    title: 'Social-engineer your AI reviewer? "Just a cleanup" → LGTM👍',
+    description:
+      'An interesting paper from yesterday showcasing a simple experiment: Reintroduce an old vulnerability, frame it as "refactor" or "performance improvement", and let AI review it.',
+    publishedAt: '2026-03-15',
+    body: socialEngAiBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'merkle_tree_cert',
+    title: 'Google squeezed 15 kB into 700 B: The real embedded lesson',
+    description:
+      'A look at Google\'s Merkle Tree Certificates and what it means for embedded systems.',
+    publishedAt: '2026-03-16',
+    body: merkleTreeCertBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'coding_local_ai',
+    title: 'Coding with local models: Not great… but also not bad👀',
+    description:
+      'A look at the coding with local models and what it means for embedded systems.',
+    publishedAt: '2026-03-17',
+    body: codingLocalAiBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'cpp_at_scale',
+    title: 'C++ at Scale: Engineering trade-offs, performance, clean code, and binary size.',
+    description:
+      'An interview with Sándor Dargó (Senior Software Engineer at Spotify) on clean C++ at scale.',
+    publishedAt: '2026-03-18',
+    body: cppAtScaleBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'airsnitch',
+    title: 'ICYMI: AirSnitch cool toolkit to check your Wi-Fi',
+    description:
+      'A cool toolkit to check your Wi-Fi.',
+    publishedAt: '2026-03-05',
+    body: airsnitchBody.trim(),
+    year: '26',
+  },
+  {
     slug: 'realtime_sanitize',
     title: 'When Embedded means Realtime: Clang 20\'s Realtime Sanitizer',
     description:
       'A look at the realtime sanitizer in Clang 20.',
-    publishedAt: '2026-05-11',
+    publishedAt: '2026-02-23',
     body: realtimeSanitizeBody.trim(),
     year: '26',
   },
@@ -87,7 +167,7 @@ export const posts: Post[] = [
     title: '250 LOC MicroGPT...and the clones',
     description:
       'A look at the micro GPT project and the clones.',
-    publishedAt: '2026-05-11',
+    publishedAt: '2026-02-24',
     body: microGptBody.trim(),
     year: '26',
   },
@@ -96,7 +176,7 @@ export const posts: Post[] = [
     title: 'SSH stack on hashtag#ESP32: libssh or dropbear?',
     description:
       'A look at the SSH stack on ESP32: libssh or dropbear.',
-    publishedAt: '2026-05-11',
+    publishedAt: '2026-02-25',
     body: sshDropbearBody.trim(),
     year: '26',
   },
@@ -114,7 +194,7 @@ export const posts: Post[] = [
     title: 'Memory Safety in C++',
     description:
       'A look at the memory safety in C++.',
-    publishedAt: '2026-05-11',
+    publishedAt: '2026-02-27',
     body: memsafetyCppBody.trim(),
     year: '26',
   },

@@ -100,8 +100,78 @@ import cppPunningBody from '../blog/26/cpp_punning.md?raw';
 import dcpMcpBody from '../blog/26/dcp_mcp.md?raw';
 import antiAiBody from '../blog/26/anti_ai.md?raw';
 import jobUpdateBody from '../blog/26/job_update.md?raw';
+import typePunning1Body from '../blog/26/type_punning_1.md?raw';
+import typePunning2Body from '../blog/26/type_punning_2.md?raw';
+import ubTheaterBody from '../blog/26/ub_theater.md?raw';
+import fuzzBrainBody from '../blog/26/fuzz_brain.md?raw';
+import smaltcpBody from '../blog/26/smaltcp.md?raw';
+import pqcHotTakeBody from '../blog/26/pqc_hot_take.md?raw';
+import runStoryBody from '../blog/26/run_story.md?raw';
 
 export const posts: Post[] = [
+  {
+    slug: 'type_punning_1',
+    title: 'Type punning in C++: Part 1. Alignment',
+    description:
+      'Type punning in C vs C++: Part 1. Alignment',
+    publishedAt: '2026-06-3',
+    body: typePunning1Body.trim(),
+    year: '26',
+  },
+  {
+    slug: 'type_punning_2',
+    title: 'Type punning in C++: Part 2. Aliasing',
+    description:
+      'Type punning in C vs C++: Part 2. Strict aliasing and `restrict`',
+    publishedAt: '2026-06-10',
+    body: typePunning2Body.trim(),
+    year: '26',
+  },
+  {
+    slug: 'ub_theater',
+    title: 'UB was a deliberate design choice',
+    description:
+      'An interesting take on the UB in C, C++ and Rust.',
+    publishedAt: '2026-06-15',
+    body: ubTheaterBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'fuzz_brain',
+    title: 'FuzzingBrainv2: depth vs. breadth',
+    description:
+      'FuzzingBrainv2: fuzzing breadth vs. depth.',
+    publishedAt: '2026-06-16',
+    body: fuzzBrainBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'smaltcp',
+    title: 'smoltcp: Rust TCP/IP stack for microcontrollers',
+    description:
+      'ESP32 running smoltcp, a Rust TCP/IP stack for microcontrollers.',
+    publishedAt: '2026-06-19',
+    body: smaltcpBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'pqc_hot_take',
+    title: 'PQC Hot Take',
+    description:
+      'Interesting systematization of PQC adoption',
+    publishedAt: '2026-06-09',
+    body: pqcHotTakeBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'run_story',
+    title: 'Personal story',
+    description:
+      'Personal story: Weekend running report',
+    publishedAt: '2026-06-08',
+    body: runStoryBody.trim(),
+    year: '26',
+  },
   {
     slug: 'cpp_punning',
     title: 'Type punning in C++: What could go wrong?',

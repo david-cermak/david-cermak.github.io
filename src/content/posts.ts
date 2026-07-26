@@ -107,8 +107,157 @@ import fuzzBrainBody from '../blog/26/fuzz_brain.md?raw';
 import smaltcpBody from '../blog/26/smaltcp.md?raw';
 import pqcHotTakeBody from '../blog/26/pqc_hot_take.md?raw';
 import runStoryBody from '../blog/26/run_story.md?raw';
-
+import typePunning3Body from '../blog/26/type_punning_3.md?raw';
+import lievenCoroutinesBody from '../blog/26/lieven_coroutines.md?raw';
+import cppReflectionTargetBody from '../blog/26/cpp_reflection_target.md?raw';
+import deferCBody from '../blog/26/defer_c.md?raw';
+import hardeningBackfiresBody from '../blog/26/hardening_backfires.md?raw';
+import cpp26HardeningBody from '../blog/26/cpp_26_hardening.md?raw';
+import esp32LvglBody from '../blog/26/esp32_lvgl.md?raw';
+import hardeningSkillBody from '../blog/26/hardening_skill.md?raw';
+import iocccBody from '../blog/26/ioccc.md?raw';
+import craObsoleteBody from '../blog/26/cra_obsolete.md?raw';
+import libsshMembrowseBody from '../blog/26/libssh_membrowse.md?raw';
+import opensslHollowbyteBody from '../blog/26/openssl_hollowbyte.md?raw';
+import stdExpectedBody from '../blog/26/std_expected.md?raw';
+import aiSecurityBanchBody from '../blog/26/ai_security_banch.md?raw';
+import fuzzemupBody from '../blog/26/fuzzemup.md?raw';
 export const posts: Post[] = [
+  {
+    slug: 'fuzzemup',
+    title: 'FuzzEmUp: EM guided fuzzing',
+    description:
+      'FuzzEmUp: EM guided fuzzing',
+    publishedAt: '2026-07-27',
+    body: fuzzemupBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'ai_security_banch',
+    title: 'AI Security Benchmarks',
+    description:
+      'AI Security Benchmarks',
+    publishedAt: '2026-07-26',
+    body: aiSecurityBanchBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'std_expected',
+    title: 'std::expected: useful for embedded devs',
+    description:
+      'std::expected',
+    publishedAt: '2026-07-25',
+    body: stdExpectedBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'openssl_hollowbyte',
+    title: 'OpenSSL Hollowbyte insights',
+    description:
+      'OpenSSL Hollowbyte insights for embedded engineers',
+    publishedAt: '2026-07-24',
+    body: opensslHollowbyteBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'libssh_membrowse',
+    title: 'libssh: tracking memory with Membrowse',
+    description:
+      'libssh and Membrowse',
+    publishedAt: '2026-07-23',
+    body: libsshMembrowseBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'cra_obsolete',
+    title: 'Is CRA obsolete?',
+    description:
+      'CRA is obsolete',
+    publishedAt: '2026-07-22',
+    body: craObsoleteBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'ioccc',
+    title: 'Do you still read code: Obfuscated C Code',
+    description:
+      'IOCCC 2025',
+    publishedAt: '2026-07-20',
+    body: iocccBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'hardening_skill',
+    title: 'Hardening Skill.md',
+    description:
+      'Hardening Skill',
+    publishedAt: '2026-07-18',
+    body: hardeningSkillBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'esp32_lvgl',
+    title: 'GUIs on ESP32 with LVGL',
+    description:
+      'GUIs on ESP32 with LVGL and MCP',
+    publishedAt: '2026-07-15',
+    body: esp32LvglBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'cpp_26_hardening',
+    title: 'C++26 Library Hardening',
+    description:
+      'C++26 Hardening',
+    publishedAt: '2026-07-12',
+    body: cpp26HardeningBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'hardening_backfires',
+    title: 'When hardening backfires',
+    description:
+      'Hardening Backfires',
+    publishedAt: '2026-07-08',
+    body: hardeningBackfiresBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'defer_c',
+    title: 'defer in C',
+    description:
+      'RAII alternatives in C',
+    publishedAt: '2026-07-05',
+    body: deferCBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'cpp_reflection_target',
+    title: 'C++26 Reflection on Embedded Targets',
+    description:
+      'C++26 Reflection on Embedded Targets',
+    publishedAt: '2026-07-03',
+    body: cppReflectionTargetBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'lieven_coroutines',
+    title: 'Inside C++ Coroutines: How They Really Work',
+    description:
+      'Inside C++ Coroutines: How They Really Work',
+    publishedAt: '2026-06-28',
+    body: lievenCoroutinesBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'type_punning_3',
+    title: 'Type punning in C++: Part 3. Lifetime',
+    description:
+      'Type punning in C vs C++: Part 3. Lifetime',
+    publishedAt: '2026-06-26',
+    body: typePunning3Body.trim(),
+    year: '26',
+  },
   {
     slug: 'type_punning_1',
     title: 'Type punning in C++: Part 1. Alignment',

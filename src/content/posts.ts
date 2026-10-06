@@ -122,7 +122,17 @@ import opensslHollowbyteBody from '../blog/26/openssl_hollowbyte.md?raw';
 import stdExpectedBody from '../blog/26/std_expected.md?raw';
 import aiSecurityBanchBody from '../blog/26/ai_security_banch.md?raw';
 import fuzzemupBody from '../blog/26/fuzzemup.md?raw';
+import stlCookbookBody from '../blog/26/stl_cookbook.md?raw';
 export const posts: Post[] = [
+  {
+    slug: 'stl_cookbook',
+    title: 'Book review: C++ STL Cookbook',
+    description:
+      'Book review: C++ STL Cookbook by Bill Weinman',
+    publishedAt: '2026-10-06',
+    body: stlCookbookBody.trim(),
+    year: '26',
+  },
   {
     slug: 'fuzzemup',
     title: 'FuzzEmUp: EM guided fuzzing',

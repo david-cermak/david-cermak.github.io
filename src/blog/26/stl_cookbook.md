@@ -97,7 +97,7 @@ void countem (int id) {
 }
 ```
 
-# Manage optional values with std::optional
+### Manage optional values
 
 Similarly, an std::optional<T> return value explicitly represents either a value or its absence. I generally prefer that interface to an undocumented sentinel when absence is an expected result.
 
@@ -135,7 +135,7 @@ C++ STL Cookbook, second edition, is useful supplementary reading for an interme
 
 The embedded relevance is real, but selective. I found the interface and storage examples more useful than any general argument for adopting the standard library wholesale. The appropriate approach is to identify a relevant recipe, establish its requirements, and test it in the intended environment.
 
-My recommendation is to use the book one recipe at a time, alongside a library reference and a compiler. Its value is not in eliminating handwritten loops, but in providing more implementation choices—and enough context to begin evaluating them.
+My recommendation is to use the book one recipe at a time, alongside a library reference and a compiler. Its value is not in eliminating handwritten loops, but in providing more implementation choices, and enough context to begin evaluating them.
 
 ## Links
 

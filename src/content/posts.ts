@@ -123,7 +123,17 @@ import stdExpectedBody from '../blog/26/std_expected.md?raw';
 import aiSecurityBanchBody from '../blog/26/ai_security_banch.md?raw';
 import fuzzemupBody from '../blog/26/fuzzemup.md?raw';
 import stlCookbookBody from '../blog/26/stl_cookbook.md?raw';
+import no_more_hellBody from '../blog/26/no_more_hell.md?raw';
 export const posts: Post[] = [
+  {
+    slug: 'no_more_helloworlds',
+    title: 'No more helloworlds',
+    description:
+      'No more helloworlds',
+    publishedAt: '2026-10-20',
+    body: no_more_hellBody.trim(),
+    year: '26',
+  },
   {
     slug: 'stl_cookbook',
     title: 'Book review: C++ STL Cookbook',

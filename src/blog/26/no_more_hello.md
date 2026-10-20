@@ -28,9 +28,7 @@ The tooling is specific: Linux commands, Ninja, Qt Widgets, and GitHub Actions. 
 
 ## What the author has to say
 
-Kutiavin states the gap clearly: "Knowing the language is necessary, but professional development also requires an understanding of architecture, build systems, testing, and version control." And later: "Understanding this full workflow is one of the key differences between writing small programs and building software professionally." That is the book in two sentences.
-
-On architecture: "In short, architecture is how you keep complexity under control as the project grows." The practical rules that follow are sharper than the slogan. Closed layers call only the layer below. Interfaces must never expose types from lower layers. `std::shared_ptr` is allowed only when shared ownership is an explicit design decision.
+The author the main theme directly: "Knowing the language is necessary, but professional development also requires an understanding of architecture, build systems, testing, and version control." And later: "Understanding this full workflow is one of the key differences between writing small programs and building software professionally." That is the book in two sentences. And on architecture: "In short, architecture is how you keep complexity under control as the project grows."
 
 On testing: "Good tests enable confident change." On UI testing: "UI tests should verify behavior, not appearance." On change management: "The key lesson is that software development is not only the process of writing new code, but also the process of integrating change without breaking what already exists."
 

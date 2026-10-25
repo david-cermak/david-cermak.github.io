@@ -124,7 +124,67 @@ import aiSecurityBanchBody from '../blog/26/ai_security_banch.md?raw';
 import fuzzemupBody from '../blog/26/fuzzemup.md?raw';
 import stlCookbookBody from '../blog/26/stl_cookbook.md?raw';
 import no_more_helloBody from '../blog/26/no_more_hello.md?raw';
+import etlVectorBody from '../blog/26/etl_vector.md?raw';
+import dependabotLessonBody from '../blog/26/dependabot_lesson.md?raw';
+import hijackedDnsBody from '../blog/26/hijacked_dns.md?raw';
+import libsshReleaseBody from '../blog/26/libssh_release.md?raw';
+import codeReviewsAiBody from '../blog/26/code_reviews_ai.md?raw';
+import vulnScanBody from '../blog/26/vuln_scan.md?raw';   
 export const posts: Post[] = [
+  {
+    slug: 'vuln_scan',
+    title: 'Vulnerability scanning without frontier models: Diversity wins and C is still hard, paper shows',
+    description:
+      'Vulnerability scanning without frontier models: Diversity wins and C is still hard, paper shows',
+    publishedAt: '2026-08-17',
+    body: vulnScanBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'etl_vector',
+    title: 'std::vector in firmware',
+    description:
+      'std::vector in firmware',
+    publishedAt: '2026-08-06',
+    body: etlVectorBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'dependabot_lesson',
+    title: 'What supply chain attacks taught us... and what they taught Dependabot',
+    description:
+      'What supply chain attacks taught us... and what they taught Dependabot',
+    publishedAt: '2026-08-10',
+    body: dependabotLessonBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'hijacked_dns',
+    title: 'Hijacked DNS',
+    description:
+      'Hijacked DNS',
+    publishedAt: '2026-08-13',
+    body: hijackedDnsBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'libssh_release',
+    title: 'libssh/embedded v0.12.0~3 released',
+    description:
+      'libssh/embedded v0.12.0~3 released',
+    publishedAt: '2026-08-16',
+    body: libsshReleaseBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'code_reviews_ai',
+    title: 'Code reviews aren\'t going away. But, ...they\'re changing',
+    description:
+      'Code reviews aren\'t going away. But, ...they\'re changing',
+    publishedAt: '2026-08-06',
+    body: codeReviewsAiBody.trim(),
+    year: '26',
+  },
   {
     slug: 'no_more_helloworlds',
     title: 'No more helloworlds',

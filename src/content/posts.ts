@@ -130,7 +130,57 @@ import hijackedDnsBody from '../blog/26/hijacked_dns.md?raw';
 import libsshReleaseBody from '../blog/26/libssh_release.md?raw';
 import codeReviewsAiBody from '../blog/26/code_reviews_ai.md?raw';
 import vulnScanBody from '../blog/26/vuln_scan.md?raw';   
+import cppModulesBody from '../blog/26/cpp_modules.md?raw';
+import cppContractsBody from '../blog/26/cpp_26_contracts.md?raw';
+import toctouTontouBody from '../blog/26/toctou_tontou.md?raw';
+import canSecurityBody from '../blog/26/can_security.md?raw';
+import deferInCBody from '../blog/26/defer_in_c.md?raw';
 export const posts: Post[] = [
+  {
+    slug: 'cpp_contracts',
+    title: 'Why embedded devs should care about C++26 Contracts?',
+    description:
+      'Why embedded devs should care about C++26 Contracts?',
+    publishedAt: '2026-08-22',
+    body: cppContractsBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'toctou_tontou',
+    title: 'TocTou Tontou: Timing is part of your security model',
+    description:
+      'TocTou Tontou: Timing is part of your security model',
+    publishedAt: '2026-08-20',
+    body: toctouTontouBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'can_security',
+    title: 'CAN security? Needs to move closer to the controller/hardware layer',
+    description:
+      'CAN security? Needs to move closer to the controller/hardware layer',
+    publishedAt: '2026-08-17',
+    body: canSecurityBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'defer_in_c',
+    title: 'Defer in C: GCC (👍), Clang (👌) ...and MSVC ( 🤔 )',
+    description:
+      'Defer in C: GCC (👍), Clang (👌) ...and MSVC ( 🤔 )',
+    publishedAt: '2026-08-15',
+    body: deferInCBody.trim(),
+    year: '26',
+  },
+  {
+    slug: 'cpp_modules',
+    title: 'C++ Modules: the language feature is only half the story',
+    description:
+      'C++ Modules: the language feature is only half the story',
+    publishedAt: '2026-08-20',
+    body: cppModulesBody.trim(),
+    year: '26',
+  },
   {
     slug: 'vuln_scan',
     title: 'Vulnerability scanning without frontier models: Diversity wins and C is still hard, paper shows',

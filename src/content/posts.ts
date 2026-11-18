@@ -135,7 +135,17 @@ import cppContractsBody from '../blog/26/cpp_26_contracts.md?raw';
 import toctouTontouBody from '../blog/26/toctou_tontou.md?raw';
 import canSecurityBody from '../blog/26/can_security.md?raw';
 import deferInCBody from '../blog/26/defer_in_c.md?raw';
+import wifiCsiBody from '../blog/26/wifi_csi.md?raw';
 export const posts: Post[] = [
+  {
+    slug: 'wifi_csi',
+    title: 'Wi-Fi detects a person😎, but who gets the data🤔?',
+    description:
+      'Wi-Fi detects a person😎, but who gets the data🤔?',
+    publishedAt: '2026-08-23',
+    body: wifiCsiBody.trim(),
+    year: '26',
+  },
   {
     slug: 'cpp_contracts',
     title: 'Why embedded devs should care about C++26 Contracts?',
